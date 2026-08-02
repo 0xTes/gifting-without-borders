@@ -1,0 +1,319 @@
+@import "tailwindcss";
+
+/* ==========================================================
+   Gifting Without Borders
+   Design System Foundation v1
+   ========================================================== */
+
+:root {
+  /* ========================================================
+     Brand Colors
+     ======================================================== */
+
+  --background: #f8f7f2;
+  --surface: #ffffff;
+
+  --primary: #0f766e;
+  --primary-600: #0d5e58;
+  --primary-700: #0a4a45;
+
+  --accent: #f59e0b;
+  --accent-600: #d97706;
+
+  --success: #16a34a;
+
+  /* ========================================================
+     Text
+     ======================================================== */
+
+  --foreground: #0f172a;
+  --foreground-secondary: #334155;
+  --foreground-muted: #64748b;
+
+  /* ========================================================
+     Borders
+     ======================================================== */
+
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  /* ========================================================
+     Focus
+     ======================================================== */
+
+  --focus-ring: #f59e0b;
+
+  /* ========================================================
+     Radius
+     ======================================================== */
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* ========================================================
+     Layout
+     ======================================================== */
+
+  --container-width: 1280px;
+  --reading-width: 768px;
+
+  /* ========================================================
+     Shadows
+     ======================================================== */
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+  --shadow-md:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+  --shadow-lg:
+    0 12px 32px rgba(0, 0, 0, 0.10);
+
+  /* ========================================================
+     Motion
+     ======================================================== */
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ==========================================================
+   Tailwind Theme Mapping
+   ========================================================== */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+
+  --color-primary: var(--primary);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+
+  --color-accent: var(--accent);
+  --color-accent-600: var(--accent-600);
+
+  --color-success: var(--success);
+
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-muted: var(--foreground-muted);
+
+  --font-heading: var(--font-merriweather);
+  --font-body: var(--font-inter);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+}
+
+/* ==========================================================
+   Base
+   ========================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================
+   Typography
+   ========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground);
+  font-family: var(--font-merriweather);
+  font-weight: 700;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2.25rem, 4vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--foreground-secondary);
+  max-width: 70ch;
+}
+
+strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+small {
+  color: var(--foreground-muted);
+}
+
+/* ==========================================================
+   Links
+   ========================================================== */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition:
+    color var(--duration-normal) var(--ease-standard);
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* ==========================================================
+   Media
+   ========================================================== */
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+/* ==========================================================
+   Forms
+   ========================================================== */
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+
+input,
+textarea,
+select {
+  padding: 0.875rem 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* ==========================================================
+   Accessibility
+   ========================================================== */
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==========================================================
+   Utility Foundation
+   ========================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.reading-width {
+  max-width: var(--reading-width);
+}
+
+.section-padding {
+  padding-block: 6rem;
+}
+
+.surface {
+  background: var(--surface);
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-md);
+}
+
+.text-muted {
+  color: var(--foreground-muted);
+}
+
+.text-secondary {
+  color: var(--foreground-secondary);
+}
+
+/* ==========================================================
+   Selection
+   ========================================================== */
+
+::selection {
+  background: rgba(15, 118, 110, 0.18);
+}
