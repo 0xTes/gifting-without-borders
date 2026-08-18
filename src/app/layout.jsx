@@ -1,16 +1,18 @@
 import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
+import SiteFooter from "@/components/layout/site-footer";
+import SiteHeader from "@/components/layout/site-header";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-inter",
   display: "swap",
 });
 
 const merriweather = Merriweather({
   subsets: ["latin"],
-  variable: "--font-heading",
-  weight: ["300", "400", "700", "900"],
+  variable: "--font-merriweather",
+  weight: ["400", "700", "900"],
   display: "swap",
 });
 
@@ -74,14 +76,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-    >
-      <body
-        className={`${inter.variable} ${merriweather.variable}`}
-      >
+    <html lang="en">
+      <body className={`${inter.variable} ${merriweather.variable}`}>
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
+        <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
