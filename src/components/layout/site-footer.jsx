@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
@@ -9,8 +10,13 @@ export default function SiteFooter() {
       <div className="container site-footer__grid">
         <div className="site-footer__identity">
           <Link className="site-brand" href="/">
-            <span aria-hidden="true" className="site-brand__rule" />
-            <span>Gifting Without Borders</span>
+            <Image
+              alt="Gifting Without Borders"
+              className="site-brand__logo"
+              height={278}
+              src="/images/brand/gifting-without-borders-logo.png"
+              width={494}
+            />
           </Link>
           <p>
             Supporting compassionate, community-centered humanitarian work with dignity and care.

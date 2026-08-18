@@ -1,6 +1,7 @@
-import ProjectReadinessCard from "@/components/cards/project-readiness-card";
+import ProjectCard from "@/components/cards/project-card";
 import ButtonLink from "@/components/ui/button-link";
 import SectionHeading from "@/components/ui/section-heading";
+import { projects } from "@/data/projects";
 
 export default function FeaturedProjects() {
   return (
@@ -10,7 +11,7 @@ export default function FeaturedProjects() {
           <SectionHeading
             eyebrow="Featured projects"
             id="projects-heading"
-            intro="Project profiles will share the purpose, local context, and progress of each initiative once verified for publication."
+            intro="These project profiles preserve the organisation’s publicly shared areas of work while making clear where current reporting is still needed."
           >
             Work worth understanding before it is supported.
           </SectionHeading>
@@ -19,22 +20,11 @@ export default function FeaturedProjects() {
           </ButtonLink>
         </div>
 
-        <div className="project-readiness-grid" aria-label="Project information in preparation">
-          <ProjectReadinessCard
-            detail="Clear objectives and the practical need each initiative is designed to meet."
-            title="Purpose and approach"
-          />
-          <ProjectReadinessCard
-            detail="Relevant local context, shared with care and without reducing communities to a headline."
-            title="Context and community"
-          />
-          <ProjectReadinessCard
-            detail="Updates that make it easier to understand what is underway and what comes next."
-            title="Progress and learning"
-          />
+        <div className="project-readiness-grid project-readiness-grid--featured" aria-label="Featured project records">
+          {projects.slice(0, 3).map((project) => <ProjectCard key={project.slug} project={project} />)}
         </div>
         <p className="section-note">
-          Verified project records are being prepared. We will publish them when they can be shared responsibly.
+          Project dates, locations, and outcome reports are not presented until they can be verified for current publication.
         </p>
       </div>
     </section>
