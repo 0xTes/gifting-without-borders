@@ -45,6 +45,34 @@ export default async function ProjectDetailPage({ params }) {
         </div>
       </section>
 
+      {project.gallery?.length ? (
+        <section className="section project-gallery" aria-labelledby="project-gallery-heading">
+          <div className="container">
+            <div className="project-gallery__heading">
+              <div>
+                <p className="eyebrow">Legacy project gallery</p>
+                <h2 id="project-gallery-heading">Photographs from the legacy project record.</h2>
+              </div>
+              <p>
+                These photographs were grouped with this area on the organisation-controlled legacy gallery. They preserve public visual context; they do not confirm current activity, dates, places, or outcomes.
+              </p>
+            </div>
+            <div className="project-gallery__grid">
+              {project.gallery.map((image, index) => (
+                <figure className="project-gallery__item" key={image.src}>
+                  <Image
+                    alt={image.alt}
+                    fill
+                    sizes={index === 0 ? "(min-width: 62rem) 78vw, 100vw" : "(min-width: 62rem) 38vw, 100vw"}
+                    src={image.src}
+                  />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section className="section" aria-labelledby="project-transparency-heading">
         <div className="container project-transparency">
           <div>

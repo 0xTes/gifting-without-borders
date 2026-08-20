@@ -1,4 +1,5 @@
 import ButtonLink from "@/components/ui/button-link";
+import Image from "next/image";
 import { siteConfig } from "@/config/site";
 
 export default function HomeHero() {
@@ -11,7 +12,7 @@ export default function HomeHero() {
             Compassion in action. <span>Impact without borders.</span>
           </h1>
           <p className="body-large home-hero__intro">
-            We connect generosity with community-centered humanitarian action, led with care, dignity, and a commitment to accountability.
+            The public legacy record describes care that reaches beyond social boundaries and four areas of support. This site keeps that history in view while current reporting is prepared.
           </p>
           <div className="button-group">
             <ButtonLink href={siteConfig.donateHref}>Donate</ButtonLink>
@@ -21,14 +22,15 @@ export default function HomeHero() {
           </div>
         </div>
 
-        <aside className="home-hero__statement" aria-label="Our approach">
-          <div className="home-hero__statement-rule" />
-          <p className="home-hero__statement-label">Our approach</p>
-          <p className="home-hero__statement-copy">
-            Humanitarian support should make people feel seen—not reduced to a statistic.
-          </p>
-          <p className="home-hero__statement-meta">Community first · dignity always</p>
-        </aside>
+        <figure className="home-hero__media">
+          <Image
+            alt="A Gifting Without Borders team member stands beside an older woman outdoors."
+            fill
+            priority
+            sizes="(min-width: 62rem) 42vw, 100vw"
+            src="/images/home/hero.webp"
+          />
+        </figure>
       </div>
     </section>
   );

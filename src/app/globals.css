@@ -120,7 +120,7 @@ img, picture, video, canvas, svg { display: block; max-width: 100%; }
 .section--teal { background: var(--primary-700); }
 
 .eyebrow, .content-ready-panel__label, .project-readiness-card__label,
-.home-hero__statement-label, .mission-principle__number, .site-footer__heading {
+.mission-principle__number, .site-footer__heading {
   color: var(--primary);
   font-size: 0.75rem;
   font-weight: 700;
@@ -213,6 +213,12 @@ img, picture, video, canvas, svg { display: block; max-width: 100%; }
 .site-footer__nav a, .site-footer .text-link { color: rgb(255 255 255 / 0.86); }
 .site-footer__nav a:hover, .site-footer .text-link:hover { color: #ffffff; }
 .site-footer__support-copy { max-width: 30ch; margin-bottom: 1rem; }
+.site-footer__social-list { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.site-footer__social-list a { display: grid; width: 2.75rem; height: 2.75rem; place-items: center; border: 1px solid rgb(255 255 255 / 0.42); border-radius: 50%; color: #ffffff; transition: border-color var(--duration-fast) var(--ease-standard), background var(--duration-fast) var(--ease-standard); }
+.site-footer__social-list a:hover { border-color: #ffffff; background: rgb(255 255 255 / 0.12); }
+.site-footer__social-list svg { width: 1.45rem; height: 1.45rem; fill: currentColor; }
+.site-footer__social-list svg rect, .site-footer__social-list svg circle { fill: none; stroke: currentColor; stroke-width: 1.9; }
+.site-footer__social-list svg circle:last-child { fill: currentColor; stroke: none; }
 .site-footer__bottom { display: flex; flex-direction: column; gap: 0.5rem; padding-block: 1.5rem; border-top: 1px solid rgb(255 255 255 / 0.18); font-size: 0.8125rem; }
 
 /* Homepage */
@@ -220,12 +226,8 @@ img, picture, video, canvas, svg { display: block; max-width: 100%; }
 .home-hero__grid { display: grid; align-items: end; gap: 3rem; }
 .home-hero__intro { max-width: 53ch; margin-top: 1.75rem; }
 .home-hero__content .button-group { margin-top: 2rem; }
-.home-hero__statement { position: relative; overflow: hidden; padding: 2rem; border-radius: var(--radius-lg); background: var(--surface-subtle); }
-.home-hero__statement::after { position: absolute; right: -2rem; bottom: -3rem; width: 11rem; height: 11rem; border: 1px solid rgb(15 118 110 / 0.25); border-radius: 50%; content: ""; }
-.home-hero__statement-rule { width: 3.25rem; height: 0.25rem; margin-bottom: 1.75rem; background: var(--accent); }
-.home-hero__statement-label { margin-bottom: 0.75rem; }
-.home-hero__statement-copy { position: relative; z-index: 1; max-width: 28ch; color: var(--foreground); font-family: var(--font-merriweather), Georgia, serif; font-size: clamp(1.25rem, 2.4vw, 1.7rem); font-weight: 700; line-height: 1.35; }
-.home-hero__statement-meta { position: relative; z-index: 1; margin-top: 1.75rem; color: var(--primary-700); font-size: 0.85rem; font-weight: 700; }
+.home-hero__media { position: relative; min-height: clamp(20rem, 51vw, 39rem); margin: 0; overflow: hidden; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); background: var(--surface-subtle); box-shadow: var(--shadow-sm); }
+.home-hero__media img { object-fit: cover; object-position: 50% center; }
 .mission-snapshot__principles { display: grid; gap: 1.75rem; margin-block: 3rem 2rem; }
 .mission-principle { padding-top: 1.25rem; border-top: 1px solid var(--border); }
 .mission-principle__number { margin-bottom: 1rem; color: var(--accent-600); }
@@ -316,6 +318,13 @@ img, picture, video, canvas, svg { display: block; max-width: 100%; }
 .project-detail-copy { display: grid; gap: 1.25rem; }
 .project-detail-copy h2 { max-width: 16ch; }
 .project-detail-copy > p:last-child { max-width: 58ch; }
+.project-gallery { background: var(--surface-subtle); }
+.project-gallery__heading { display: grid; gap: 1.5rem; }
+.project-gallery__heading h2 { max-width: 19ch; }
+.project-gallery__heading > p { max-width: 55ch; }
+.project-gallery__grid { display: grid; gap: 1rem; margin-top: 3rem; }
+.project-gallery__item { position: relative; min-height: 17rem; margin: 0; overflow: hidden; border-radius: var(--radius-sm); background: #dfe8e3; }
+.project-gallery__item img { object-fit: cover; }
 .project-transparency { display: grid; gap: 2rem; }
 .project-transparency h2 { max-width: 17ch; }
 .project-transparency > div:last-child { display: grid; gap: 1rem; max-width: 55ch; }
@@ -352,12 +361,14 @@ img, picture, video, canvas, svg { display: block; max-width: 100%; }
 
 @media (min-width: 40rem) {
   :root { --gutter: 1.75rem; }
-  .site-footer__grid { grid-template-columns: 1.4fr 0.75fr 0.95fr; }
+  .site-footer__grid { grid-template-columns: 1.35fr repeat(3, minmax(0, 0.72fr)); }
   .site-footer__bottom { flex-direction: row; justify-content: space-between; }
   .mission-snapshot__principles, .project-readiness-grid, .accountability-grid { grid-template-columns: repeat(3, 1fr); }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
   .about-statements, .support-grid, .donate-methods, .stories-future__grid { grid-template-columns: repeat(2, 1fr); }
   .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-gallery__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-gallery__item:first-child { grid-column: span 2; min-height: 28rem; }
   .story-standard__rules { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .story-standard__rules article { padding: 1.5rem; border-right: 1px solid var(--border); }
   .story-standard__rules article:last-child { border-right: 0; }
@@ -368,8 +379,8 @@ img, picture, video, canvas, svg { display: block; max-width: 100%; }
   .site-nav--desktop { display: flex; }
   .menu-button, .site-nav--mobile { display: none !important; }
   .site-header__actions { margin-left: 0; }
-  .home-hero__grid { grid-template-columns: minmax(0, 1.3fr) minmax(20rem, 0.7fr); gap: clamp(3rem, 8vw, 8rem); }
-  .home-hero__statement { margin-bottom: 0.25rem; }
+  .home-hero__grid { grid-template-columns: minmax(0, 1fr) minmax(22rem, 0.9fr); gap: clamp(3rem, 8vw, 8rem); }
+  .home-hero__media { min-height: clamp(31rem, 42vw, 43rem); }
   .section-split-heading { grid-template-columns: minmax(0, 1fr) auto; align-items: end; }
   .section-split-heading__link { margin-bottom: 0.1rem; }
   .impact-layout { grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.55fr); align-items: end; gap: 5rem; }
@@ -382,6 +393,8 @@ img, picture, video, canvas, svg { display: block; max-width: 100%; }
   .about-hero__image, .project-detail-hero__image { min-height: 27rem; }
   .about-leadership__grid, .project-index__method-grid, .impact-page__intro, .impact-page__reporting-grid, .stories-purpose, .story-standard, .donate-primary, .donate-confidence__grid { grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr); align-items: end; gap: 5rem; }
   .project-transparency { grid-template-columns: minmax(0, 0.9fr) minmax(21rem, 1.1fr); gap: 5rem; }
+  .project-gallery__grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); }
+  .project-gallery__item:first-child { min-height: 36rem; }
   .impact-principles { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; }
   .impact-page__reporting ul { margin-top: 0.25rem; }
 }
