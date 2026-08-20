@@ -2,9 +2,9 @@ import ButtonLink from "@/components/ui/button-link";
 import SectionHeading from "@/components/ui/section-heading";
 
 const principles = [
-  ["01", "Dignity in every interaction", "People are more than the circumstances they face."],
-  ["02", "Community-centered action", "We listen closely to the needs and context behind every initiative."],
-  ["03", "Accountability in view", "Clear information helps supporters follow the purpose of their giving."],
+  ["01", "Community-centred", "The legacy site described working alongside communities and local partners so initiatives reflect community needs and priorities."],
+  ["02", "Integrity & transparency", "The legacy site framed accountability and transparent stewardship as guides to its work."],
+  ["03", "Sustainability", "The legacy site described looking for support that could be sustained over time."],
 ];
 
 export default function MissionSnapshot() {
@@ -12,11 +12,11 @@ export default function MissionSnapshot() {
     <section aria-labelledby="mission-heading" className="section section--surface">
       <div className="container mission-snapshot">
         <SectionHeading
-          eyebrow="Mission snapshot"
+          eyebrow="From the legacy public record"
           id="mission-heading"
-          intro="Gifting Without Borders exists to support humanitarian work that helps people move forward with dignity, opportunity, and hope."
+          intro="The previous public site described a philosophy of care beyond social boundaries. It is retained here as historical context, not a newly adopted mission."
         >
-          Generosity can be thoughtful, local, and lasting.
+          A history of service, told with care.
         </SectionHeading>
 
         <div className="mission-snapshot__principles">

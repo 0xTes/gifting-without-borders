@@ -11,7 +11,7 @@ export default function AboutPage() {
             <p className="eyebrow">About Gifting Without Borders</p>
             <h1>Practical care, shared with dignity.</h1>
             <p className="body-large about-hero__intro">
-              Public legacy material identifies Gifting Without Borders and describes four areas of support: empowerment and training, medical outreach, feeding outreach, and widows outreach. This record provides historical context; it does not confirm current activity or results.
+              Public legacy material identifies Gifting Without Borders and describes four areas of support: empowerment and training, medical outreach, feeding outreach, and widows outreach. The broader legacy profile describes a philosophy of care that reaches beyond social boundaries. This record provides historical context; it does not confirm current activity or results.
             </p>
             <ButtonLink href="/projects">Explore our project records</ButtonLink>
           </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
             <p className="eyebrow">Legacy public record</p>
             <h2 id="mission-heading">An historic description of the work.</h2>
             <p className="body-large">
-              The legacy homepage describes an emphasis on community empowerment, sustainable development, and education. That wording is retained here as historical context, not as a current approved mission statement.
+              The legacy homepage describes an emphasis on community empowerment, sustainable development, and education. It also framed its philosophy as care that reaches beyond social boundaries. That wording is retained here as historical context, not as a current approved mission statement.
             </p>
           </div>
           <div>
@@ -50,39 +50,32 @@ export default function AboutPage() {
       <section className="section" aria-labelledby="values-heading">
         <div className="container">
           <SectionHeading
-            eyebrow="How we aim to work"
+            eyebrow="Previously published guiding principles"
             id="values-heading"
-            intro="These are publication principles for this website, not a claimed list of the organisation’s adopted values."
+            intro="The legacy site presented these three principles. They are preserved as historic public material and are not presented as a newly confirmed statement of current values."
           >
-            Principles for a truthful public record.
+            Guiding principles from the legacy record.
           </SectionHeading>
           <ol className="values-list">
             <li>
               <span>01</span>
               <div>
-                <h3>Dignity</h3>
-                <p>Support should respect people’s agency, privacy, and full humanity.</p>
+                <h3>Community-centred</h3>
+                <p>The legacy record described working alongside communities and local partners so initiatives reflect community needs and priorities.</p>
               </div>
             </li>
             <li>
               <span>02</span>
               <div>
-                <h3>Community</h3>
-                <p>Listening to local context matters as much as delivering practical assistance.</p>
+                <h3>Integrity &amp; transparency</h3>
+                <p>The legacy record described accountability and transparency as guides to how resources should be used and explained.</p>
               </div>
             </li>
             <li>
               <span>03</span>
               <div>
-                <h3>Stewardship</h3>
-                <p>Generosity deserves thoughtful use, clear communication, and care over time.</p>
-              </div>
-            </li>
-            <li>
-              <span>04</span>
-              <div>
-                <h3>Accountability</h3>
-                <p>We believe trust is strengthened when information is shared with clarity and context.</p>
+                <h3>Sustainability</h3>
+                <p>The legacy record described designing support with long-term community maintenance in mind.</p>
               </div>
             </li>
           </ol>
@@ -101,6 +94,21 @@ export default function AboutPage() {
           <p>
             Verified leadership profiles will be shared here when the organisation has confirmed names, roles, and biographies for publication.
           </p>
+        </div>
+      </section>
+
+      <section className="section section--surface" aria-labelledby="location-heading">
+        <div className="container about-statements">
+          <div>
+            <p className="eyebrow">Location</p>
+            <h2 id="location-heading">Find us in Mushin.</h2>
+          </div>
+          <div>
+            <p className="body-large">Palm Avenue, Mushin, Lagos, Nigeria.</p>
+            <p>
+              This conservative location reference has been approved by the project owner for current publication. A detailed address, hours, and contact channels will be added only when they are verified.
+            </p>
+          </div>
         </div>
       </section>
 

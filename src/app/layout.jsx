@@ -23,22 +23,11 @@ export const metadata = {
   },
 
   description:
-    "A humanitarian nonprofit advancing dignity, opportunity, and sustainable impact through community-centered giving.",
+    "A public record of Gifting Without Borders’ legacy project areas and future verified information.",
 
   applicationName: "Gifting Without Borders",
 
-  keywords: [
-    "nonprofit",
-    "charity",
-    "humanitarian",
-    "donations",
-    "community impact",
-    "education",
-    "healthcare",
-    "poverty alleviation",
-    "Nigeria",
-    "Africa",
-  ],
+  keywords: ["Gifting Without Borders", "legacy public record", "project archive"],
 
   authors: [
     {
@@ -50,27 +39,20 @@ export const metadata = {
 
   publisher: "Gifting Without Borders",
 
-  metadataBase: new URL("https://www.giftingwithoutborders.org"),
-
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: "Gifting Without Borders",
     title: "Gifting Without Borders",
     description:
-      "Building trust through transparent giving, measurable impact, and community-centered humanitarian work.",
+      "A public record of Gifting Without Borders’ legacy project areas and future verified information.",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "Gifting Without Borders",
     description:
-      "Building trust through transparent giving, measurable impact, and community-centered humanitarian work.",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
+      "A public record of Gifting Without Borders’ legacy project areas and future verified information.",
   },
 };
 
