@@ -25,7 +25,7 @@ export default function TransparencyAccountability() {
           </ContentReadyPanel>
         </div>
         <p className="section-note">
-          Report links and downloads will appear only after the relevant materials have been formally published.
+          No annual report, financial overview, or impact summary was located in the audited legacy source. Report links and downloads will appear only after the relevant materials have been formally published.
         </p>
       </div>
     </section>

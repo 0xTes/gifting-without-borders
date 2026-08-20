@@ -20,10 +20,10 @@ export default async function ProjectDetailPage({ params }) {
       <section className="project-detail-hero">
         <div className="container project-detail-hero__grid">
           <div>
-            <p className="eyebrow">Project record</p>
+            <p className="eyebrow">Legacy public record</p>
             <h1>{project.title}</h1>
             <p className="body-large">{project.description}</p>
-            <p className="project-detail-hero__source">Public legacy description · reporting details pending verification</p>
+            <p className="project-detail-hero__source">Historical description from the organisation homepage · current reporting pending verification</p>
           </div>
           {project.image ? (
             <figure className="project-detail-hero__image">
@@ -38,7 +38,7 @@ export default async function ProjectDetailPage({ params }) {
       <section className="section section--surface" aria-labelledby="project-context-heading">
         <div className="container-sm project-detail-copy">
           <p className="eyebrow">Project context</p>
-          <h2 id="project-context-heading">What this public record establishes.</h2>
+          <h2 id="project-context-heading">What this historic public record establishes.</h2>
           <p>
             Gifting Without Borders publicly identified {project.title.toLowerCase()} as an area of its work. The legacy description above is preserved here as the available statement of purpose.
           </p>

@@ -17,7 +17,7 @@ export default function ImpactByNumbers() {
           </SectionHeading>
           <div className="impact-layout__aside">
             <p>
-              Our first public impact summary is in preparation. Until reporting is verified, we will not publish placeholder statistics.
+              A legacy homepage displays undated figures, but without a reporting period, source, scope, or methodology they are not republished here. Our first public impact summary is in preparation.
             </p>
             <ButtonLink href="/impact" variant="text-light">
               Explore our impact approach <span aria-hidden="true">→</span>

@@ -11,7 +11,7 @@ export default function AboutPage() {
             <p className="eyebrow">About Gifting Without Borders</p>
             <h1>Practical care, shared with dignity.</h1>
             <p className="body-large about-hero__intro">
-              Gifting Without Borders brings people together around practical humanitarian support, skills development, health, and care for communities.
+              Public legacy material identifies Gifting Without Borders and describes four areas of support: empowerment and training, medical outreach, feeding outreach, and widows outreach. This record provides historical context; it does not confirm current activity or results.
             </p>
             <ButtonLink href="/projects">Explore our project records</ButtonLink>
           </div>
@@ -31,17 +31,17 @@ export default function AboutPage() {
       <section className="section section--surface" aria-labelledby="mission-heading">
         <div className="container about-statements">
           <div>
-            <p className="eyebrow">Our purpose</p>
-            <h2 id="mission-heading">Mission</h2>
+            <p className="eyebrow">Legacy public record</p>
+            <h2 id="mission-heading">An historic description of the work.</h2>
             <p className="body-large">
-              To empower communities and help build more secure futures through support that is practical, respectful, and rooted in real needs.
+              The legacy homepage describes an emphasis on community empowerment, sustainable development, and education. That wording is retained here as historical context, not as a current approved mission statement.
             </p>
           </div>
           <div>
-            <p className="eyebrow">Our horizon</p>
-            <h2>Vision</h2>
+            <p className="eyebrow">Still to be confirmed</p>
+            <h2>Current direction and leadership.</h2>
             <p className="body-large">
-              Communities with the opportunity, support, and confidence to move forward with dignity.
+              Current mission, vision, values, governance, and leadership information will be published only when the organisation has approved it for public use.
             </p>
           </div>
         </div>
@@ -52,9 +52,9 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="How we aim to work"
             id="values-heading"
-            intro="Our public legacy materials describe a commitment to sustainable change. These principles guide how that commitment should be put into practice."
+            intro="These are publication principles for this website, not a claimed list of the organisation’s adopted values."
           >
-            Values that keep people at the centre.
+            Principles for a truthful public record.
           </SectionHeading>
           <ol className="values-list">
             <li>
@@ -94,7 +94,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Leadership"
             id="leadership-heading"
-            intro="The organisation’s public legacy website does not provide current leadership information suitable for republication."
+            intro="The organisation’s accessible legacy public pages do not provide current leadership information suitable for republication."
           >
             People should be introduced with accuracy, not assumption.
           </SectionHeading>

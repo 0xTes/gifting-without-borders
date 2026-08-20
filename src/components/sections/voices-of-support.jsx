@@ -26,7 +26,7 @@ export default function VoicesOfSupport() {
           <aside className="voices-layout__note">
             <p className="eyebrow">Our editorial commitment</p>
             <p>
-              We do not use anonymous quotations or polished soundbites to manufacture trust. Real voices will be presented in their own context.
+              The legacy homepage’s testimonial content is not reused because consent, factual context, and image permissions could not be verified. Real voices will be presented in their own context.
             </p>
           </aside>
         </div>

@@ -20,7 +20,7 @@ export default function DonatePage() {
             <p className="donate-primary__status-label">Verification status</p>
             <h3>Payment details pending publication</h3>
             <p>
-              Bank name, account name, and account number will appear here only after the organisation confirms that they are current and safe to share publicly.
+              The legacy Donate route was unavailable during the source audit, and no current payment instruction was recovered. Bank name, account name, and account number will appear here only after the organisation confirms that they are current and safe to share publicly.
             </p>
           </div>
         </div>
