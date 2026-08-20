@@ -1,5 +1,5 @@
-import FutureRoute from "@/components/layout/future-route";
+import PaymentChannelPage from "@/components/layout/payment-channel-page";
 
 export default function BankTransferPage() {
-  return <FutureRoute title="Bank transfer" />;
+  return <PaymentChannelPage channel="Bank transfer" />;
 }

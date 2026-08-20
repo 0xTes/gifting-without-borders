@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { siteConfig } from "@/config/site";
@@ -42,8 +43,14 @@ export default function SiteHeader() {
     <header className="site-header">
       <div className="container site-header__inner" ref={menuRef}>
         <Link className="site-brand" href="/" onClick={closeMenu}>
-          <span aria-hidden="true" className="site-brand__rule" />
-          <span>Gifting Without Borders</span>
+          <Image
+            alt="Gifting Without Borders"
+            className="site-brand__logo"
+            height={278}
+            priority
+            src="/images/brand/gifting-without-borders-logo.png"
+            width={494}
+          />
         </Link>
 
         <nav aria-label="Primary navigation" className="site-nav site-nav--desktop">

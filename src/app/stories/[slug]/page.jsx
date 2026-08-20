@@ -1,5 +1,5 @@
-import FutureRoute from "@/components/layout/future-route";
+import { notFound } from "next/navigation";
 
 export default function StoryDetailPage() {
-  return <FutureRoute title="Story" />;
+  notFound();
 }
