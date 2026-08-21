@@ -3,12 +3,12 @@ export const projects = [
     slug: "empowerment-training",
     title: "Empowerment & Training",
     description:
-      "The legacy record describes skills and training intended to support individual and community empowerment.",
+      "Skills and training that support individual and community empowerment.",
     image: "/images/projects/empowerment-training.webp",
     imageAlt:
       "People stand together indoors holding certificates.",
     sourceNote:
-      "Legacy public record with project-owner republication approval. The gallery and selected project updates are historical material; they are not a current activity, outcome, or methodology report.",
+      "Project information is shared with the available context. More detailed reporting will be added as it is prepared.",
     updates: [
       {
         title: "IT Training — Full Stack Development",
@@ -42,26 +42,12 @@ export const projects = [
     slug: "medical-outreach",
     title: "Medical Outreach",
     description:
-      "The legacy record describes medical services and health education as an area of support.",
+      "Medical services and health education for communities seeking practical support.",
     image: "/images/projects/medical-outreach.jpg",
     imageAlt:
       "People sit outdoors around a table during a community gathering.",
     sourceNote:
-      "Legacy public record with project-owner republication approval. The gallery and selected project updates are historical material; they are not a current activity, outcome, or methodology report.",
-    updates: [
-      {
-        title: "2021 Outreach Program",
-        status: "Completed",
-        location: "Mushin",
-        record: "2025",
-      },
-      {
-        title: "Blood Donation",
-        status: "Completed",
-        location: "Fedral Hospital of Lagos",
-        record: "2025",
-      },
-    ],
+      "Project information is shared with the available context. More detailed reporting will be added as it is prepared.",
     gallery: [
       {
         src: "/images/projects/medical-outreach/medical-outreach-01.webp",
@@ -81,12 +67,12 @@ export const projects = [
     slug: "feeding-outreach",
     title: "Feeding Outreach",
     description:
-      "The legacy record describes food support, including a Ramadan-related outreach area.",
+      "Food support for people and families, including Ramadan outreach.",
     image: "/images/projects/feeding-outreach.jpg",
     imageAlt:
       "People wearing Gifting Without Borders shirts stand beside food and household supplies.",
     sourceNote:
-      "Legacy public record with project-owner republication approval. The gallery preserves historical visual context; no specific status, date, location, or outcome record has been published here.",
+      "Project information is shared with the available context. More detailed reporting will be added as it is prepared.",
     gallery: [
       {
         src: "/images/projects/feeding-outreach/feeding-outreach-01.webp",
@@ -106,12 +92,12 @@ export const projects = [
     slug: "widows-outreach",
     title: "Widows Outreach",
     description:
-      "The legacy record describes outreach and practical support for widows.",
+      "Outreach and practical support for widows.",
     image: "/images/projects/widows-outreach/widows-outreach-01.webp",
     imageAlt:
       "Two people in Gifting Without Borders shirts stand with an older woman holding bags.",
     sourceNote:
-      "Legacy public record with project-owner republication approval, including a directly supplied owner copy of the primary photograph. The gallery preserves historical visual context; no specific status, date, location, or outcome record has been published here.",
+      "Project information is shared with the available context. More detailed reporting will be added as it is prepared.",
     gallery: [
       {
         src: "/images/projects/widows-outreach/widows-outreach-01.webp",

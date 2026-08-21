@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Gifting Without Borders",
   shortName: "GWB",
   description:
-    "A public record of Gifting Without Borders’ legacy project areas and future verified information.",
+    "Gifting Without Borders shares community-centred work across empowerment, medical outreach, food support, and widows outreach.",
   navigation: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },

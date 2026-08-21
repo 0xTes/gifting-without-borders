@@ -23,11 +23,11 @@ export const metadata = {
   },
 
   description:
-    "A public record of Gifting Without Borders’ legacy project areas and future verified information.",
+    "Gifting Without Borders shares community-centred work across empowerment, medical outreach, food support, and widows outreach.",
 
   applicationName: "Gifting Without Borders",
 
-  keywords: ["Gifting Without Borders", "legacy public record", "project archive"],
+  keywords: ["Gifting Without Borders", "community support", "projects"],
 
   authors: [
     {
@@ -45,14 +45,14 @@ export const metadata = {
     siteName: "Gifting Without Borders",
     title: "Gifting Without Borders",
     description:
-      "A public record of Gifting Without Borders’ legacy project areas and future verified information.",
+      "Gifting Without Borders shares community-centred work across empowerment, medical outreach, food support, and widows outreach.",
   },
 
   twitter: {
     card: "summary_large_image",
     title: "Gifting Without Borders",
     description:
-      "A public record of Gifting Without Borders’ legacy project areas and future verified information.",
+      "Gifting Without Borders shares community-centred work across empowerment, medical outreach, food support, and widows outreach.",
   },
 };
 

@@ -1,11 +1,11 @@
-export const legacyImpactMetrics = [
-  { value: "50K", label: "People helped" },
-  { value: "25", label: "Communities reached" },
-  { value: "30", label: "Empowerment & training" },
-  { value: "500", label: "Volunteers" },
+export const impactMetrics = [
+  { countTo: 50, suffix: "K", value: "50K", label: "People helped" },
+  { countTo: 25, value: "25", label: "Communities reached" },
+  { countTo: 30, value: "30", label: "Empowerment & training" },
+  { countTo: 500, value: "500", label: "Volunteers" },
 ];
 
-export const legacyStories = [
+export const stories = [
   {
     name: "Amina Yusuf",
     role: "Empowerment Program Beneficiary",
@@ -20,5 +20,5 @@ export const legacyStories = [
   },
 ];
 
-export const legacyImpactQualifier =
-  "Legacy public figures · reporting period and methodology not specified.";
+export const impactReportingNote =
+  "Published figures; reporting period and methodology are being documented.";

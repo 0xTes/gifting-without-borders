@@ -20,17 +20,17 @@ export default async function ProjectDetailPage({ params }) {
       <section className="project-detail-hero">
         <div className="container project-detail-hero__grid">
           <div>
-            <p className="eyebrow">Legacy public record</p>
+            <p className="eyebrow">Project</p>
             <h1>{project.title}</h1>
             <p className="body-large">{project.description}</p>
-            <p className="project-detail-hero__source">Owner-approved republication of legacy public material · current reporting context remains to be published</p>
+            <p className="project-detail-hero__source">Project information is shared with the context currently available.</p>
           </div>
           {project.image ? (
             <figure className="project-detail-hero__image">
               <Image alt={project.imageAlt} fill priority sizes="(min-width: 62rem) 43vw, 100vw" src={project.image} />
             </figure>
           ) : (
-            <div aria-hidden="true" className="project-detail-hero__image project-detail-hero__image--fallback">Project archive</div>
+            <div aria-hidden="true" className="project-detail-hero__image project-detail-hero__image--fallback">Project</div>
           )}
         </div>
       </section>
@@ -38,9 +38,9 @@ export default async function ProjectDetailPage({ params }) {
       <section className="section section--surface" aria-labelledby="project-context-heading">
         <div className="container-sm project-detail-copy">
           <p className="eyebrow">Project context</p>
-          <h2 id="project-context-heading">What this historic public record establishes.</h2>
+          <h2 id="project-context-heading">Work with purpose and context.</h2>
           <p>
-            Gifting Without Borders publicly identified {project.title.toLowerCase()} as an area of its work. The legacy description above is preserved here as the available statement of purpose.
+            Gifting Without Borders shares {project.title.toLowerCase()} as an area of its work. This page brings together the available description, visual context, and future space for reporting.
           </p>
         </div>
       </section>
@@ -50,11 +50,11 @@ export default async function ProjectDetailPage({ params }) {
           <div className="container">
             <div className="project-gallery__heading">
               <div>
-                <p className="eyebrow">Legacy project gallery</p>
-                <h2 id="project-gallery-heading">Photographs from the legacy project record.</h2>
+                <p className="eyebrow">Gallery</p>
+                <h2 id="project-gallery-heading">Moments from the work.</h2>
               </div>
               <p>
-                These photographs were grouped with this area on the organisation-controlled legacy gallery. They preserve public visual context; they are not presented as a current project update.
+                Photographs bring a human dimension to the project area and its practical focus.
               </p>
             </div>
             <div className="project-gallery__grid">
@@ -77,7 +77,7 @@ export default async function ProjectDetailPage({ params }) {
         <div className="container project-updates">
           <div>
             <p className="eyebrow">Project updates</p>
-            <h2 id="project-updates-heading">{project.updates?.length ? "Selected status records from the archive." : "No specific status record is published yet."}</h2>
+            <h2 id="project-updates-heading">{project.updates?.length ? "Selected project updates." : "Project updates will be shared here."}</h2>
           </div>
           {project.updates?.length ? (
             <div className="project-updates__list">
@@ -87,15 +87,15 @@ export default async function ProjectDetailPage({ params }) {
                   <h3>{update.title}</h3>
                   <dl>
                     <div><dt>Location</dt><dd>{update.location}</dd></div>
-                    <div><dt>Legacy record</dt><dd>{update.record}</dd></div>
+                    <div><dt>Published</dt><dd>{update.record}</dd></div>
                   </dl>
                 </article>
               ))}
             </div>
           ) : (
-            <p className="project-updates__empty">The legacy material supports this project area and its photographs, but does not clearly associate a status, date, or location with this record.</p>
+            <p className="project-updates__empty">New project updates will appear here as they are prepared for publication.</p>
           )}
-          <p className="project-updates__note">Labels and details are reproduced from the approved legacy public record. They are historical reference points, not live progress indicators.</p>
+          <p className="project-updates__note">Project progress is shared through clear status updates rather than percentage bars.</p>
         </div>
       </section>
 
@@ -103,12 +103,12 @@ export default async function ProjectDetailPage({ params }) {
         <div className="container project-transparency">
           <div>
             <p className="eyebrow">Transparency note</p>
-            <h2 id="project-transparency-heading">A clear boundary around what the archive cannot establish.</h2>
+            <h2 id="project-transparency-heading">Reporting with clarity.</h2>
           </div>
           <div>
             <p>{project.sourceNote}</p>
             <p>
-              The owner-approved archive makes historic context available. Future reporting can add methodology, date context, delivery updates, and outcomes without changing this structure.
+              Future reporting can add methodology, date context, delivery updates, and outcomes as the information is prepared.
             </p>
           </div>
         </div>

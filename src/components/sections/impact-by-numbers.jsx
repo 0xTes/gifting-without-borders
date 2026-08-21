@@ -1,6 +1,7 @@
 import ButtonLink from "@/components/ui/button-link";
+import AnimatedMetric from "@/components/ui/animated-metric";
 import SectionHeading from "@/components/ui/section-heading";
-import { legacyImpactMetrics, legacyImpactQualifier } from "@/data/legacy-records";
+import { impactMetrics, impactReportingNote } from "@/data/organization-content";
 
 export default function ImpactByNumbers() {
   return (
@@ -8,15 +9,15 @@ export default function ImpactByNumbers() {
       <div className="container">
         <div className="impact-layout">
           <SectionHeading
-            eyebrow="Impact by numbers"
+            eyebrow="Impact snapshot"
             id="impact-heading"
-            intro="A preserved public snapshot of the organisation’s legacy figures, presented with its limitations intact."
+            intro="A view of the people, places, learning, and collective effort reflected in published figures."
           >
-            Numbers deserve their context.
+            Numbers that tell a story.
           </SectionHeading>
           <div className="impact-layout__aside">
             <p>
-              These figures were published on the legacy homepage and are now shared with project-owner approval. They are not presented as audited or current totals.
+              Numbers matter most when they are paired with care, context, and a commitment to clearer reporting over time.
             </p>
             <ButtonLink href="/impact" variant="text-light">
               Explore our impact approach <span aria-hidden="true">→</span>
@@ -25,15 +26,14 @@ export default function ImpactByNumbers() {
         </div>
 
         <dl className="metrics-grid">
-          {legacyImpactMetrics.map((metric) => (
+          {impactMetrics.map((metric) => (
             <div className="metric" key={metric.label}>
               <dt>{metric.label}</dt>
-              <dd>{metric.value}</dd>
-              <p>Legacy public record</p>
+              <dd aria-label={`${metric.value} ${metric.label}`}><AnimatedMetric countTo={metric.countTo} suffix={metric.suffix} /></dd>
             </div>
           ))}
         </dl>
-        <p className="impact-layout__qualifier">{legacyImpactQualifier}</p>
+        <p className="impact-layout__qualifier">{impactReportingNote}</p>
       </div>
     </section>
   );

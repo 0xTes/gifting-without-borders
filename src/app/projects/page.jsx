@@ -8,8 +8,8 @@ export default function ProjectsPage() {
     <main id="main-content">
       <PageHero
         eyebrow="Projects"
-        intro="These project records are drawn from Gifting Without Borders’ public legacy website. They describe established areas of work while avoiding claims that the source did not support."
-        title="Practical work deserves a clear record."
+        intro="Explore the areas of work that bring practical support, learning, health outreach, and food support into community life."
+        title="Practical work, centred on people."
       >
         <div className="button-group page-hero__actions">
           <ButtonLink href="/impact">How we think about impact</ButtonLink>
@@ -21,10 +21,10 @@ export default function ProjectsPage() {
         <div className="container">
           <div className="project-index__heading">
             <div>
-              <p className="eyebrow">Public project archive</p>
-              <h2 id="project-list-heading">Four established areas of support.</h2>
+              <p className="eyebrow">Our projects</p>
+              <h2 id="project-list-heading">Four areas of support.</h2>
             </div>
-            <p>Each profile distinguishes published project purpose from information that still needs verification.</p>
+            <p>Each project brings together its purpose, visual context, and the updates that can be shared clearly.</p>
           </div>
           <div className="project-grid">
             {projects.map((project) => <ProjectCard key={project.slug} project={project} />)}
@@ -35,12 +35,12 @@ export default function ProjectsPage() {
       <section className="section project-index__method" aria-labelledby="method-heading">
         <div className="container project-index__method-grid">
           <div>
-            <p className="eyebrow">A careful archive</p>
-            <h2 id="method-heading">Context belongs beside the project name.</h2>
+            <p className="eyebrow">With care and context</p>
+            <h2 id="method-heading">Understanding belongs beside the project name.</h2>
           </div>
           <div>
             <p>
-              As project information is refreshed, each record can grow to include verified context, dates, updates, and reported outcomes—without replacing evidence with broad promises.
+              Each project can grow with dates, updates, and reported outcomes as new information is prepared and shared.
             </p>
             <ButtonLink href="/impact" variant="text">Read our reporting approach <span aria-hidden="true">→</span></ButtonLink>
           </div>

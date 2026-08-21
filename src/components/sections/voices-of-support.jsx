@@ -1,6 +1,6 @@
 import ButtonLink from "@/components/ui/button-link";
 import SectionHeading from "@/components/ui/section-heading";
-import { legacyStories } from "@/data/legacy-records";
+import { stories } from "@/data/organization-content";
 
 export default function VoicesOfSupport() {
   return (
@@ -10,9 +10,9 @@ export default function VoicesOfSupport() {
           <SectionHeading
             eyebrow="Voices of Support"
             id="voices-heading"
-            intro="Two voices preserved from the organisation’s legacy public record, republished with project-owner approval."
+            intro="Two voices that speak to the practical difference made through care, learning, and shared effort."
           >
-            Voices from the public record.
+            Voices from the work.
           </SectionHeading>
           <ButtonLink href="/stories" variant="text">
             Read more stories <span aria-hidden="true">→</span>
@@ -20,7 +20,7 @@ export default function VoicesOfSupport() {
         </div>
 
         <div className="voices-layout__panels">
-          {legacyStories.map((story) => (
+          {stories.map((story) => (
             <article className="voice-card" key={story.name}>
               <p className="voice-card__quote-mark" aria-hidden="true">“</p>
               <p className="voice-card__name">{story.name}</p>
@@ -29,9 +29,9 @@ export default function VoicesOfSupport() {
             </article>
           ))}
           <aside className="voices-layout__note">
-            <p className="eyebrow">Publication note</p>
+            <p className="eyebrow">More stories</p>
             <p>
-              Names, roles, and quotations are reproduced as displayed in the legacy public record. Portraits are intentionally not reused because their provenance is unclear.
+              More voices and fuller project context will be added here as new stories are prepared for publication.
             </p>
           </aside>
         </div>

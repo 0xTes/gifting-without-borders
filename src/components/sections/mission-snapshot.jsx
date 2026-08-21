@@ -2,9 +2,9 @@ import ButtonLink from "@/components/ui/button-link";
 import SectionHeading from "@/components/ui/section-heading";
 
 const principles = [
-  ["01", "Community-centred", "The legacy site described working alongside communities and local partners so initiatives reflect community needs and priorities."],
-  ["02", "Integrity & transparency", "The legacy site framed accountability and transparent stewardship as guides to its work."],
-  ["03", "Sustainability", "The legacy site described looking for support that could be sustained over time."],
+  ["01", "Community-centred", "Support is most useful when it begins with the people, places, and priorities closest to the work."],
+  ["02", "Integrity & transparency", "Care deserves clear communication, thoughtful stewardship, and room for questions."],
+  ["03", "Sustainability", "Practical help is strongest when it can contribute to lasting possibilities over time."],
 ];
 
 export default function MissionSnapshot() {
@@ -12,11 +12,11 @@ export default function MissionSnapshot() {
     <section aria-labelledby="mission-heading" className="section section--surface">
       <div className="container mission-snapshot">
         <SectionHeading
-          eyebrow="From the legacy public record"
+          eyebrow="Our approach"
           id="mission-heading"
-          intro="The previous public site described a philosophy of care beyond social boundaries. It is retained here as historical context, not a newly adopted mission."
+          intro="A thoughtful approach to care can be local, practical, and lasting."
         >
-          A history of service, told with care.
+          Generosity can be thoughtful, local, and lasting.
         </SectionHeading>
 
         <div className="mission-snapshot__principles">

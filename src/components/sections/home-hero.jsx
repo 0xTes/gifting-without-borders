@@ -9,10 +9,12 @@ export default function HomeHero() {
         <div className="home-hero__content">
           <p className="eyebrow">{siteConfig.name}</p>
           <h1 className="heading-display" id="home-heading">
-            Compassion in action. <span>Impact without borders.</span>
+            <span className="home-hero__line">Compassion in</span>{" "}
+            <span className="home-hero__line">action. <span className="home-hero__impact-phrase">Impact&nbsp;without</span></span>{" "}
+            <span className="home-hero__line">borders.</span>
           </h1>
           <p className="body-large home-hero__intro">
-            The public legacy record describes care that reaches beyond social boundaries and four areas of support. This site keeps that history in view while current reporting is prepared.
+            Gifting Without Borders brings practical care, shared learning, health outreach, and food support into view with dignity and clarity.
           </p>
           <div className="button-group">
             <ButtonLink href={siteConfig.donateHref}>Donate</ButtonLink>
@@ -24,7 +26,7 @@ export default function HomeHero() {
 
         <figure className="home-hero__media">
           <Image
-            alt="A Gifting Without Borders team member stands beside an older woman outdoors."
+            alt="A person wearing a Gifting Without Borders shirt stands beside an older woman outdoors."
             fill
             priority
             sizes="(min-width: 62rem) 36vw, 100vw"

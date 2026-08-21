@@ -11,9 +11,9 @@ export default function AboutPage() {
             <p className="eyebrow">About Gifting Without Borders</p>
             <h1>Practical care, shared with dignity.</h1>
             <p className="body-large about-hero__intro">
-              Public legacy material identifies Gifting Without Borders and describes four areas of support: empowerment and training, medical outreach, feeding outreach, and widows outreach. The broader legacy profile describes a philosophy of care that reaches beyond social boundaries. This record provides historical context; it does not confirm current activity or results.
+              Gifting Without Borders brings together practical care, shared learning, health outreach, food support, and a belief that dignity should guide every encounter.
             </p>
-            <ButtonLink href="/projects">Explore our project records</ButtonLink>
+            <ButtonLink href="/projects">Explore our projects</ButtonLink>
           </div>
           <figure className="about-hero__image">
             <Image
@@ -23,7 +23,7 @@ export default function AboutPage() {
               sizes="(min-width: 62rem) 42vw, 100vw"
               src="/images/projects/feeding-outreach.jpg"
             />
-            <figcaption>Public legacy documentation from Gifting Without Borders.</figcaption>
+            <figcaption>Practical support, shared with care.</figcaption>
           </figure>
         </div>
       </section>
@@ -31,17 +31,17 @@ export default function AboutPage() {
       <section className="section section--surface" aria-labelledby="mission-heading">
         <div className="container about-statements">
           <div>
-            <p className="eyebrow">Legacy public record</p>
-            <h2 id="mission-heading">An historic description of the work.</h2>
+            <p className="eyebrow">Our story</p>
+            <h2 id="mission-heading">Care that reaches beyond borders.</h2>
             <p className="body-large">
-              The legacy homepage describes an emphasis on community empowerment, sustainable development, and education. It also framed its philosophy as care that reaches beyond social boundaries. That wording is retained here as historical context, not as a current approved mission statement.
+              The organization’s public history has long centred community empowerment, sustainable development, education, and practical support. Its approach begins with a simple idea: people deserve to be met with care, respect, and attention to what matters locally.
             </p>
           </div>
           <div>
-            <p className="eyebrow">Still to be confirmed</p>
+            <p className="eyebrow">Looking ahead</p>
             <h2>Current direction and leadership.</h2>
             <p className="body-large">
-              Current mission, vision, values, governance, and leadership information will be published only when the organisation has approved it for public use.
+              Leadership profiles, governance information, and future reporting will be shared as they are prepared for publication.
             </p>
           </div>
         </div>
@@ -50,32 +50,32 @@ export default function AboutPage() {
       <section className="section" aria-labelledby="values-heading">
         <div className="container">
           <SectionHeading
-            eyebrow="Previously published guiding principles"
+            eyebrow="What guides the work"
             id="values-heading"
-            intro="The legacy site presented these three principles. They are preserved as historic public material and are not presented as a newly confirmed statement of current values."
+            intro="The work is shaped by a commitment to people, accountability, and possibilities that can last."
           >
-            Guiding principles from the legacy record.
+            Principles that guide the work.
           </SectionHeading>
           <ol className="values-list">
             <li>
               <span>01</span>
               <div>
                 <h3>Community-centred</h3>
-                <p>The legacy record described working alongside communities and local partners so initiatives reflect community needs and priorities.</p>
+                <p>Listening closely to community needs helps make support more useful, relevant, and respectful.</p>
               </div>
             </li>
             <li>
               <span>02</span>
               <div>
                 <h3>Integrity &amp; transparency</h3>
-                <p>The legacy record described accountability and transparency as guides to how resources should be used and explained.</p>
+                <p>Thoughtful stewardship and clear communication make it easier to understand how support is being directed.</p>
               </div>
             </li>
             <li>
               <span>03</span>
               <div>
                 <h3>Sustainability</h3>
-                <p>The legacy record described designing support with long-term community maintenance in mind.</p>
+                <p>Practical support can create stronger possibilities when it keeps the longer term in view.</p>
               </div>
             </li>
           </ol>
@@ -87,7 +87,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Leadership"
             id="leadership-heading"
-            intro="The organisation’s accessible legacy public pages do not provide current leadership information suitable for republication."
+            intro="Leadership information will be introduced with the same care and clarity expected throughout the site."
           >
             People should be introduced with accuracy, not assumption.
           </SectionHeading>
@@ -106,7 +106,7 @@ export default function AboutPage() {
           <div>
             <p className="body-large">Palm Avenue, Mushin, Lagos, Nigeria.</p>
             <p>
-              This conservative location reference has been approved by the project owner for current publication. Legacy contact details are shared as supplied; detailed office information and hours are not currently published.
+              Reach out by phone or email, or find the organization on Palm Avenue in Mushin, Lagos.
             </p>
             <p className="about-location__contact"><a href="tel:+2349123528792">+234 9123 528 792</a><a href="mailto:giftwob@gmail.com">giftwob@gmail.com</a></p>
             <div className="about-location__map-wrap">
@@ -129,15 +129,15 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Ways to support"
             id="support-heading"
-            intro="There are many ways to stand alongside humanitarian work. The right pathways will be published as they are confirmed."
+            intro="There are many ways to stand alongside humanitarian work. Choose the pathway that fits your time, skills, or resources."
           >
             Support can take more than one form.
           </SectionHeading>
           <div className="support-grid">
-            <article><h3>Volunteer</h3><p>Volunteer opportunities will be shared when roles and safeguarding information are confirmed.</p></article>
-            <article><h3>Partner</h3><p>Organisations interested in collaboration can look for verified partnership information here.</p></article>
-            <article><h3>Sponsor</h3><p>Sponsorship pathways will be published with clear scope and accountability information.</p></article>
-            <article className="support-grid__donate"><h3>Donate</h3><p>Explore the organisation’s verified giving structure and future payment updates.</p><ButtonLink href="/donate" variant="text">Visit Donate <span aria-hidden="true">→</span></ButtonLink></article>
+            <article><h3>Volunteer</h3><p>Volunteer opportunities will be shared when roles and safeguarding information are available.</p></article>
+            <article><h3>Partner</h3><p>Organizations interested in collaboration can look for partnership information here.</p></article>
+            <article><h3>Sponsor</h3><p>Sponsorship pathways will be shared with clear scope and accountability information.</p></article>
+            <article className="support-grid__donate"><h3>Donate</h3><p>Make a direct bank transfer through the organization’s published giving route.</p><ButtonLink href="/donate" variant="text">Visit Donate <span aria-hidden="true">→</span></ButtonLink></article>
           </div>
         </div>
       </section>

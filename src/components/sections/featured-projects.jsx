@@ -11,7 +11,7 @@ export default function FeaturedProjects() {
           <SectionHeading
             eyebrow="Featured projects"
             id="projects-heading"
-            intro="These project profiles preserve the organisation’s publicly shared areas of work while making clear where current reporting is still needed."
+            intro="Explore the areas of work that bring practical support, learning, and care into community life."
           >
             Work worth understanding before it is supported.
           </SectionHeading>
@@ -24,7 +24,7 @@ export default function FeaturedProjects() {
           {projects.slice(0, 3).map((project) => <ProjectCard key={project.slug} project={project} />)}
         </div>
         <p className="section-note">
-          Selected archive updates appear only where an exact legacy record is clear; they remain historical reference, not live progress data.
+          Project updates are shared where the available information is clear. Progress is reported with context, not percentage bars.
         </p>
       </div>
     </section>
