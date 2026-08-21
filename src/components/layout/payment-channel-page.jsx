@@ -1,6 +1,11 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 export default function PaymentChannelPage({ channel }) {
+  if (channel === "Bank transfer") {
+    redirect("/donate");
+  }
+
   return (
     <main id="main-content">
       <section className="section payment-channel-page">
@@ -8,10 +13,10 @@ export default function PaymentChannelPage({ channel }) {
           <p className="eyebrow">Giving information</p>
           <h1>{channel}</h1>
           <p className="body-large">
-            This payment channel is not displayed with transaction details until the organisation has verified the information for publication.
+            This giving channel is not yet available.
           </p>
           <p>
-            Please use the Donate page to understand the available giving structure and to check for verified updates.
+            Please use the Donate page for the current bank-transfer giving route.
           </p>
           <Link className="button button--primary" href="/donate">
             Visit the Donate page

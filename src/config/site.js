@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Gifting Without Borders",
   shortName: "GWB",
   description:
-    "A humanitarian nonprofit advancing dignity, opportunity, and sustainable impact through community-centered giving.",
+    "Gifting Without Borders shares community-centred work across empowerment, medical outreach, food support, and widows outreach.",
   navigation: [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
@@ -11,6 +11,11 @@ export const siteConfig = {
     { href: "/stories", label: "Stories" },
   ],
   donateHref: "/donate",
+  socialLinks: [
+    { label: "Facebook", icon: "facebook" },
+    { label: "Twitter / X", icon: "twitter" },
+    { label: "Instagram", icon: "instagram" },
+  ],
 };
 
 export default siteConfig;

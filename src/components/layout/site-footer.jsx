@@ -19,7 +19,7 @@ export default function SiteFooter() {
             />
           </Link>
           <p>
-            Supporting compassionate, community-centered humanitarian work with dignity and care.
+            Practical care, shared learning, and community-centred support with dignity at the heart of every encounter.
           </p>
         </div>
 
@@ -35,19 +35,37 @@ export default function SiteFooter() {
         </div>
 
         <div>
-          <p className="site-footer__heading">Support</p>
-          <p className="site-footer__support-copy">
-            Giving information is shared only through verified organisation channels.
-          </p>
+          <p className="site-footer__heading">Contact</p>
+          <address className="site-footer__contact">
+            <p>Palm Avenue, Mushin,<br />Lagos, Nigeria</p>
+            <a href="tel:+2349123528792">+234 9123 528 792</a>
+            <a href="mailto:giftwob@gmail.com">giftwob@gmail.com</a>
+          </address>
           <Link className="text-link" href={siteConfig.donateHref}>
             Visit the Donate page <span aria-hidden="true">→</span>
           </Link>
         </div>
+
+        <div className="site-footer__social">
+          <p className="site-footer__heading">Follow us</p>
+          <p className="site-footer__support-copy">Official social account links will be added here soon.</p>
+        </div>
       </div>
 
       <div className="container site-footer__bottom">
-        <p>© {year} Gifting Without Borders. All rights reserved.</p>
-        <p>Built for clarity, dignity, and accountability.</p>
+        <div className="site-footer__copyright">
+          <p>© {year} Gifting Without Borders. All rights reserved.</p>
+          <span className="site-footer__credit">
+            <span>Website by</span>
+            <Image
+              alt="Teslim Digital"
+              height={1007}
+              src="/images/brand/teslim-digital-logo.png"
+              width={2182}
+            />
+          </span>
+        </div>
+        <p>Community-centred support, shared with care.</p>
       </div>
     </footer>
   );

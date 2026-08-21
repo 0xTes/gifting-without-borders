@@ -1,45 +1,52 @@
 import ButtonLink from "@/components/ui/button-link";
+import AnimatedMetric from "@/components/ui/animated-metric";
 import PageHero from "@/components/ui/page-hero";
+import { impactMetrics, impactReportingNote } from "@/data/organization-content";
 
 export default function ImpactPage() {
   return (
     <main id="main-content">
       <PageHero
         eyebrow="Impact"
-        intro="Impact is more than a headline figure. It is the relationship between a real need, the work carried out, what can be evidenced, and what still needs to be learned."
-        title="Impact should be understood with care."
+        intro="Impact is more than a headline figure. It is the relationship between a real need, practical work, and what can be learned together."
+        title="Progress begins with people."
       />
 
-      <section className="section section--surface" aria-labelledby="measurement-heading">
-        <div className="container impact-page__intro">
+      <section className="section section--teal impact-snapshot" aria-labelledby="impact-snapshot-heading">
+        <div className="container">
           <div>
-            <p className="eyebrow">What impact means here</p>
-            <h2 id="measurement-heading">A commitment to context before conclusions.</h2>
+            <p className="eyebrow">Impact snapshot</p>
+            <h2 id="impact-snapshot-heading">Numbers that tell a story.</h2>
           </div>
-          <p className="body-large">
-            Gifting Without Borders will publish figures only where they can be verified and explained. Until then, this page is a clear statement of the standard that future reporting should meet.
-          </p>
+          <dl className="metrics-grid impact-snapshot__metrics">
+          {impactMetrics.map((metric) => (
+              <div className="metric" key={metric.label}>
+                <dt>{metric.label}</dt>
+                <dd aria-label={`${metric.value} ${metric.label}`}><AnimatedMetric countTo={metric.countTo} suffix={metric.suffix} /></dd>
+              </div>
+            ))}
+          </dl>
+          <p className="impact-snapshot__qualifier">{impactReportingNote}</p>
         </div>
       </section>
 
-      <section className="section" aria-labelledby="principles-heading">
-        <div className="container">
-          <p className="eyebrow">Measurement principles</p>
-          <h2 id="principles-heading">What responsible reporting should show.</h2>
-          <ol className="impact-principles">
-            <li><span>01</span><div><h3>Purpose before figures</h3><p>Why an initiative matters and the need it was intended to address.</p></div></li>
-            <li><span>02</span><div><h3>Context alongside numbers</h3><p>Figures are more useful when their source, scope, and limitations are clear.</p></div></li>
-            <li><span>03</span><div><h3>Learning, not just celebration</h3><p>Progress should leave room for reflection and better future decisions.</p></div></li>
-            <li><span>04</span><div><h3>Publicly shareable evidence</h3><p>Information should be published only when it can be responsibly supported.</p></div></li>
-          </ol>
+      <section className="section section--surface" aria-labelledby="impact-context-heading">
+        <div className="container impact-page__intro">
+          <div>
+            <p className="eyebrow">How we think about impact</p>
+            <h2 id="impact-context-heading">Care is measured in more than one way.</h2>
+          </div>
+          <p className="body-large">
+            A number can signal reach, participation, or shared effort. It becomes more useful when it sits beside the purpose of the work, the people involved, and a clear account of how it was measured.
+          </p>
         </div>
       </section>
 
       <section className="section section--teal impact-page__reporting" aria-labelledby="reporting-heading">
         <div className="container impact-page__reporting-grid">
           <div>
-            <p className="eyebrow">Future reporting</p>
-            <h2 id="reporting-heading">What visitors can expect to find over time.</h2>
+            <p className="eyebrow">Reporting &amp; accountability</p>
+            <h2 id="reporting-heading">Clearer reporting is part of the work.</h2>
           </div>
           <ul>
             <li>Project purpose and context</li>
@@ -52,9 +59,9 @@ export default function ImpactPage() {
 
       <section className="section impact-page__cta">
         <div className="container-sm">
-          <p className="eyebrow">Explore the record</p>
+          <p className="eyebrow">Projects behind the numbers</p>
           <h2>Start with the work itself.</h2>
-          <p>Visit our current project archive to see the public descriptions that form the beginning of a more complete evidence base.</p>
+          <p>Explore the project areas where practical support, learning, health outreach, and food support come into view.</p>
           <ButtonLink href="/projects">View projects</ButtonLink>
         </div>
       </section>

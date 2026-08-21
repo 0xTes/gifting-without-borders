@@ -11,9 +11,9 @@ export default function AboutPage() {
             <p className="eyebrow">About Gifting Without Borders</p>
             <h1>Practical care, shared with dignity.</h1>
             <p className="body-large about-hero__intro">
-              Gifting Without Borders brings people together around practical humanitarian support, skills development, health, and care for communities.
+              Gifting Without Borders brings together practical care, shared learning, health outreach, food support, and a belief that dignity should guide every encounter.
             </p>
-            <ButtonLink href="/projects">Explore our project records</ButtonLink>
+            <ButtonLink href="/projects">Explore our projects</ButtonLink>
           </div>
           <figure className="about-hero__image">
             <Image
@@ -23,7 +23,7 @@ export default function AboutPage() {
               sizes="(min-width: 62rem) 42vw, 100vw"
               src="/images/projects/feeding-outreach.jpg"
             />
-            <figcaption>Public legacy documentation from Gifting Without Borders.</figcaption>
+            <figcaption>Practical support, shared with care.</figcaption>
           </figure>
         </div>
       </section>
@@ -31,17 +31,17 @@ export default function AboutPage() {
       <section className="section section--surface" aria-labelledby="mission-heading">
         <div className="container about-statements">
           <div>
-            <p className="eyebrow">Our purpose</p>
-            <h2 id="mission-heading">Mission</h2>
+            <p className="eyebrow">Our story</p>
+            <h2 id="mission-heading">Care that reaches beyond borders.</h2>
             <p className="body-large">
-              To empower communities and help build more secure futures through support that is practical, respectful, and rooted in real needs.
+              The organization’s public history has long centred community empowerment, sustainable development, education, and practical support. Its approach begins with a simple idea: people deserve to be met with care, respect, and attention to what matters locally.
             </p>
           </div>
           <div>
-            <p className="eyebrow">Our horizon</p>
-            <h2>Vision</h2>
+            <p className="eyebrow">Looking ahead</p>
+            <h2>Current direction and leadership.</h2>
             <p className="body-large">
-              Communities with the opportunity, support, and confidence to move forward with dignity.
+              Leadership profiles, governance information, and future reporting will be shared as they are prepared for publication.
             </p>
           </div>
         </div>
@@ -50,39 +50,32 @@ export default function AboutPage() {
       <section className="section" aria-labelledby="values-heading">
         <div className="container">
           <SectionHeading
-            eyebrow="How we aim to work"
+            eyebrow="What guides the work"
             id="values-heading"
-            intro="Our public legacy materials describe a commitment to sustainable change. These principles guide how that commitment should be put into practice."
+            intro="The work is shaped by a commitment to people, accountability, and possibilities that can last."
           >
-            Values that keep people at the centre.
+            Principles that guide the work.
           </SectionHeading>
           <ol className="values-list">
             <li>
               <span>01</span>
               <div>
-                <h3>Dignity</h3>
-                <p>Support should respect people’s agency, privacy, and full humanity.</p>
+                <h3>Community-centred</h3>
+                <p>Listening closely to community needs helps make support more useful, relevant, and respectful.</p>
               </div>
             </li>
             <li>
               <span>02</span>
               <div>
-                <h3>Community</h3>
-                <p>Listening to local context matters as much as delivering practical assistance.</p>
+                <h3>Integrity &amp; transparency</h3>
+                <p>Thoughtful stewardship and clear communication make it easier to understand how support is being directed.</p>
               </div>
             </li>
             <li>
               <span>03</span>
               <div>
-                <h3>Stewardship</h3>
-                <p>Generosity deserves thoughtful use, clear communication, and care over time.</p>
-              </div>
-            </li>
-            <li>
-              <span>04</span>
-              <div>
-                <h3>Accountability</h3>
-                <p>We believe trust is strengthened when information is shared with clarity and context.</p>
+                <h3>Sustainability</h3>
+                <p>Practical support can create stronger possibilities when it keeps the longer term in view.</p>
               </div>
             </li>
           </ol>
@@ -94,7 +87,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Leadership"
             id="leadership-heading"
-            intro="The organisation’s public legacy website does not provide current leadership information suitable for republication."
+            intro="Leadership information will be introduced with the same care and clarity expected throughout the site."
           >
             People should be introduced with accuracy, not assumption.
           </SectionHeading>
@@ -104,20 +97,47 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="section section--surface" aria-labelledby="location-heading">
+        <div className="container about-location">
+          <div>
+            <p className="eyebrow">Location</p>
+            <h2 id="location-heading">Find us in Mushin.</h2>
+          </div>
+          <div>
+            <p className="body-large">Palm Avenue, Mushin, Lagos, Nigeria.</p>
+            <p>
+              Reach out by phone or email, or find the organization on Palm Avenue in Mushin, Lagos.
+            </p>
+            <p className="about-location__contact"><a href="tel:+2349123528792">+234 9123 528 792</a><a href="mailto:giftwob@gmail.com">giftwob@gmail.com</a></p>
+            <div className="about-location__map-wrap">
+              <iframe
+                loading="lazy"
+                referrerPolicy="no-referrer"
+                src="https://www.google.com/maps?q=Palm%20Avenue%2C%20Mushin%2C%20Lagos%2C%20Nigeria&output=embed"
+                title="Map showing Palm Avenue in Mushin, Lagos, Nigeria"
+              />
+            </div>
+            <a className="text-link" href="https://www.google.com/maps/search/?api=1&query=Palm%20Avenue%2C%20Mushin%2C%20Lagos%2C%20Nigeria" rel="noreferrer" target="_blank">
+              Open location in maps <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="section section--surface" aria-labelledby="support-heading">
         <div className="container">
           <SectionHeading
             eyebrow="Ways to support"
             id="support-heading"
-            intro="There are many ways to stand alongside humanitarian work. The right pathways will be published as they are confirmed."
+            intro="There are many ways to stand alongside humanitarian work. Choose the pathway that fits your time, skills, or resources."
           >
             Support can take more than one form.
           </SectionHeading>
           <div className="support-grid">
-            <article><h3>Volunteer</h3><p>Volunteer opportunities will be shared when roles and safeguarding information are confirmed.</p></article>
-            <article><h3>Partner</h3><p>Organisations interested in collaboration can look for verified partnership information here.</p></article>
-            <article><h3>Sponsor</h3><p>Sponsorship pathways will be published with clear scope and accountability information.</p></article>
-            <article className="support-grid__donate"><h3>Donate</h3><p>Explore the organisation’s verified giving structure and future payment updates.</p><ButtonLink href="/donate" variant="text">Visit Donate <span aria-hidden="true">→</span></ButtonLink></article>
+            <article><h3>Volunteer</h3><p>Volunteer opportunities will be shared when roles and safeguarding information are available.</p></article>
+            <article><h3>Partner</h3><p>Organizations interested in collaboration can look for partnership information here.</p></article>
+            <article><h3>Sponsor</h3><p>Sponsorship pathways will be shared with clear scope and accountability information.</p></article>
+            <article className="support-grid__donate"><h3>Donate</h3><p>Make a direct bank transfer through the organization’s published giving route.</p><ButtonLink href="/donate" variant="text">Visit Donate <span aria-hidden="true">→</span></ButtonLink></article>
           </div>
         </div>
       </section>

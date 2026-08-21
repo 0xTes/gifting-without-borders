@@ -20,17 +20,17 @@ export default async function ProjectDetailPage({ params }) {
       <section className="project-detail-hero">
         <div className="container project-detail-hero__grid">
           <div>
-            <p className="eyebrow">Project record</p>
+            <p className="eyebrow">Project</p>
             <h1>{project.title}</h1>
             <p className="body-large">{project.description}</p>
-            <p className="project-detail-hero__source">Public legacy description · reporting details pending verification</p>
+            <p className="project-detail-hero__source">Project information is shared with the context currently available.</p>
           </div>
           {project.image ? (
             <figure className="project-detail-hero__image">
               <Image alt={project.imageAlt} fill priority sizes="(min-width: 62rem) 43vw, 100vw" src={project.image} />
             </figure>
           ) : (
-            <div aria-hidden="true" className="project-detail-hero__image project-detail-hero__image--fallback">Project archive</div>
+            <div aria-hidden="true" className="project-detail-hero__image project-detail-hero__image--fallback">Project</div>
           )}
         </div>
       </section>
@@ -38,10 +38,64 @@ export default async function ProjectDetailPage({ params }) {
       <section className="section section--surface" aria-labelledby="project-context-heading">
         <div className="container-sm project-detail-copy">
           <p className="eyebrow">Project context</p>
-          <h2 id="project-context-heading">What this public record establishes.</h2>
+          <h2 id="project-context-heading">Work with purpose and context.</h2>
           <p>
-            Gifting Without Borders publicly identified {project.title.toLowerCase()} as an area of its work. The legacy description above is preserved here as the available statement of purpose.
+            Gifting Without Borders shares {project.title.toLowerCase()} as an area of its work. This page brings together the available description, visual context, and future space for reporting.
           </p>
+        </div>
+      </section>
+
+      {project.gallery?.length ? (
+        <section className="section project-gallery" aria-labelledby="project-gallery-heading">
+          <div className="container">
+            <div className="project-gallery__heading">
+              <div>
+                <p className="eyebrow">Gallery</p>
+                <h2 id="project-gallery-heading">Moments from the work.</h2>
+              </div>
+              <p>
+                Photographs bring a human dimension to the project area and its practical focus.
+              </p>
+            </div>
+            <div className="project-gallery__grid">
+              {project.gallery.map((image, index) => (
+                <figure className="project-gallery__item" key={image.src}>
+                  <Image
+                    alt={image.alt}
+                    fill
+                    sizes={index === 0 ? "(min-width: 62rem) 78vw, 100vw" : "(min-width: 62rem) 38vw, 100vw"}
+                    src={image.src}
+                  />
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      <section className="section section--surface" aria-labelledby="project-updates-heading">
+        <div className="container project-updates">
+          <div>
+            <p className="eyebrow">Project updates</p>
+            <h2 id="project-updates-heading">{project.updates?.length ? "Selected project updates." : "Project updates will be shared here."}</h2>
+          </div>
+          {project.updates?.length ? (
+            <div className="project-updates__list">
+              {project.updates.map((update) => (
+                <article className="project-update" key={`${update.title}-${update.location}`}>
+                  <p className="project-update__status">{update.status}</p>
+                  <h3>{update.title}</h3>
+                  <dl>
+                    <div><dt>Location</dt><dd>{update.location}</dd></div>
+                    <div><dt>Published</dt><dd>{update.record}</dd></div>
+                  </dl>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className="project-updates__empty">New project updates will appear here as they are prepared for publication.</p>
+          )}
+          <p className="project-updates__note">Project progress is shared through clear status updates rather than percentage bars.</p>
         </div>
       </section>
 
@@ -49,12 +103,12 @@ export default async function ProjectDetailPage({ params }) {
         <div className="container project-transparency">
           <div>
             <p className="eyebrow">Transparency note</p>
-            <h2 id="project-transparency-heading">A clear boundary around what is not yet known.</h2>
+            <h2 id="project-transparency-heading">Reporting with clarity.</h2>
           </div>
           <div>
             <p>{project.sourceNote}</p>
             <p>
-              As verified records become available, this page can grow to include dates, location context, delivery updates, and outcomes without changing its structure.
+              Future reporting can add methodology, date context, delivery updates, and outcomes as the information is prepared.
             </p>
           </div>
         </div>

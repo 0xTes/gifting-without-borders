@@ -20,7 +20,7 @@ export default function ProjectCard({ project }) {
         </div>
       )}
       <div className="project-card__body">
-        <p className="project-card__label">Legacy project record</p>
+        <p className="project-card__label">Project area</p>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <Link className="text-link project-card__link" href={`/projects/${project.slug}`}>

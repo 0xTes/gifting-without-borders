@@ -1,6 +1,6 @@
 import ButtonLink from "@/components/ui/button-link";
-import ContentReadyPanel from "@/components/ui/content-ready-panel";
 import SectionHeading from "@/components/ui/section-heading";
+import { stories } from "@/data/organization-content";
 
 export default function VoicesOfSupport() {
   return (
@@ -10,23 +10,28 @@ export default function VoicesOfSupport() {
           <SectionHeading
             eyebrow="Voices of Support"
             id="voices-heading"
-            intro="The people closest to this work deserve to be represented accurately and with their consent."
+            intro="Two voices that speak to the practical difference made through care, learning, and shared effort."
           >
-            Listening is part of being accountable.
+            Voices from the work.
           </SectionHeading>
           <ButtonLink href="/stories" variant="text">
-            Visit our stories <span aria-hidden="true">→</span>
+            Read more stories <span aria-hidden="true">→</span>
           </ButtonLink>
         </div>
 
         <div className="voices-layout__panels">
-          <ContentReadyPanel title="Stories shared with care">
-            Donor, volunteer, partner, and community perspectives will be published only when they are complete, approved, and meaningful.
-          </ContentReadyPanel>
+          {stories.map((story) => (
+            <article className="voice-card" key={story.name}>
+              <p className="voice-card__quote-mark" aria-hidden="true">“</p>
+              <p className="voice-card__name">{story.name}</p>
+              <p className="voice-card__role">{story.role}</p>
+              <blockquote>{story.quote}</blockquote>
+            </article>
+          ))}
           <aside className="voices-layout__note">
-            <p className="eyebrow">Our editorial commitment</p>
+            <p className="eyebrow">More stories</p>
             <p>
-              We do not use anonymous quotations or polished soundbites to manufacture trust. Real voices will be presented in their own context.
+              More voices and fuller project context will be added here as new stories are prepared for publication.
             </p>
           </aside>
         </div>
