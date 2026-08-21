@@ -1,29 +1,25 @@
-# Asset inventory
+# Asset Inventory
 
-Source recovery audit: 2026-08-17. Live-source recheck and owner asset intake: 2026-08-20. The legacy source was the organization-controlled public site at `https://giftingwithoutborder.org/`; direct files named below were provided by the project owner.
+Source recovery audit: 2026-08-17. Owner asset intake and public-use review: 2026-08-20. Sources are organization-published material at `https://giftingwithoutborder.org/` and direct owner-supplied files.
 
-| Local asset | Source | Current use | Provenance boundary |
+| Local asset | Source | Current use | Source boundary |
 | --- | --- | --- | --- |
-| `public/images/brand/gifting-without-borders-logo.png` | Legacy `/Logo.png` | Header and footer identity | Organization logo published on the legacy homepage. |
-| `public/images/brand/teslim-digital-logo.png` | Owner-supplied `logo.png` | Footer implementation credit | Direct owner-supplied Teslim Digital identity asset. It is presented beside the copyright statement without a destination URL. |
-| `public/images/home/hero.webp` | Owner-supplied `hero.jpg` | Homepage right-side hero media | Direct owner-supplied visual and explicit placement direction. The delivered file is WebP despite its supplied `.jpg` filename. It supports the image placement, not an inferred activity, date, location, or outcome. |
-| `public/images/projects/empowerment-training.webp` | Legacy `/IMG4.jpg` | Empowerment & Training project card and detail hero | Legacy homepage image paired with the training project card. The delivered file is WebP despite the legacy `.jpg` URL. |
-| `public/images/projects/empowerment-training/empowerment-training-02.webp` | Legacy `/Empowerment/Emp2.jpg` | Empowerment & Training detail gallery | Original gallery image rendered in the legacy Empowerment group. The delivered file is WebP despite the legacy `.jpg` URL. |
-| `public/images/projects/empowerment-training/empowerment-training-03.webp` | Legacy `/Empowerment/Emp3.jpg` | Empowerment & Training detail gallery | Original gallery image rendered in the legacy Empowerment group. |
-| `public/images/projects/medical-outreach.jpg` | Legacy `/MED2.jpg` | Medical Outreach project card and detail hero | Legacy homepage image paired with the medical project card. |
-| `public/images/projects/medical-outreach/medical-outreach-01.webp` through `-03.webp` | Legacy `/Medical/Med1.JPG` through `Med3.JPG` | Medical Outreach detail gallery | Original gallery images rendered in the legacy Medical group. |
-| `public/images/projects/feeding-outreach.jpg` | Legacy `/IMG1.jpg` | Feeding Outreach project card, detail hero, and About hero | Legacy homepage image paired with the feeding project card. |
-| `public/images/projects/feeding-outreach/feeding-outreach-01.webp` through `-03.webp` | Legacy `/Feeding/Feed1.jpg` through `Feed3.jpg` | Feeding Outreach detail gallery | Original gallery images rendered in the legacy Feeding group. The delivered files are WebP despite their legacy `.jpg` URLs. |
-| `public/images/projects/widows-outreach/widows-outreach-01.webp` | Owner-supplied `Wid7.jpg` | Widows project card, detail hero, and gallery | Direct owner-supplied visual and explicit placement direction. It supports the image placement, not an inferred activity, date, location, or outcome. |
-| `public/images/projects/widows-outreach/widows-outreach-02.jpg` and `-03.jpg` | Legacy `/Widows/Wid2.jpg` and `Wid3.jpg` | Widows Outreach detail gallery | Original gallery images rendered in the legacy Widows group. |
+| `public/images/brand/gifting-without-borders-logo.png` | Organization-published `/Logo.png` | Header and footer identity | Organization identity asset. |
+| `public/images/brand/teslim-digital-logo.png` | Owner-supplied `logo.png` | Footer credit | Teslim Digital asset, shown with visible “Website by” wording and no destination URL. |
+| `public/images/home/hero.webp` | Owner-supplied `hero.jpg` | Homepage right-side media; Stories mosaic | Placement approval supports visual use only, not inferred activity, date, location, outcome, or role. |
+| `public/images/projects/empowerment-training.webp` and gallery files | Organization-published project source | Empowerment card, detail page, and Stories mosaic | Supports visual project context. |
+| `public/images/projects/medical-outreach.jpg` and gallery files | Organization-published project source | Medical card and detail page | Supports visual project context. |
+| `public/images/projects/feeding-outreach.jpg` and gallery files | Organization-published project source | Feeding card, detail page, About image, and Stories mosaic | Supports visual project context. |
+| `public/images/projects/widows-outreach/widows-outreach-01.webp` | Owner-supplied `Wid7.jpg` | Widows card, detail page, gallery, and Stories record | Placement approval supports visual use only, not inferred activity, date, location, outcome, or role. |
+| `public/images/projects/widows-outreach/widows-outreach-02.jpg` and `-03.jpg` | Organization-published project source | Widows detail gallery | Supports visual project context. |
+| `public/images/stories/medical-community.webp` | Owner-supplied `Screenshot_20-8-2026_223311_giftingwithoutborder.org.jpeg`, crop `660,1210` to `1200,1556` | Stories editorial record | UI-free photograph crop; WebP optimized at quality 86. Context only; no identity pairing. |
+| `public/images/stories/food-support.webp` | Owner-supplied `Screenshot_20-8-2026_223311_giftingwithoutborder.org.jpeg`, crop `660,1785` to `1200,2140` | Stories featured image | UI-free photograph crop; WebP optimized at quality 86. Context only; no identity pairing. |
 
 ## Exclusions and handling notes
 
-- The supplied legacy screenshots are evidence/reference only; no screenshot is copied into `public/` or rendered by the product.
-- One recovered Empowerment image was excluded because it visibly exposes registration and partner material that this milestone does not publish or substantiate.
-- Third-party Freepik images found in the legacy page source remain excluded.
-- Direct navigation to legacy `/gallery` returned a not-found response during the recheck, while the client-rendered gallery exposed the original source asset paths used above. The paths are treated as historic visual associations, not as a current publication record.
-- The owner has approved exact republication of the legacy impact figures, selected project status records, testimonial text, conservative location, phone number, and email. These are documented in `docs/content-evidence-matrix.md` as owner-approved legacy records, not independently audited reports.
-- No precise street address, official social account URL, bank information, wallet identifier, payment-provider URL, or QR code is present in the supplied/local source material. These remain inactive and unpublished.
-
-Project descriptions and their publication boundaries are centralized in `src/data/projects.js`. See `docs/content-evidence-matrix.md` for the evidence classification used by the trust-content milestone.
+- Full screenshots are not rendered by the product. Only the two listed UI-free photograph crops are stored in `public/images/stories/`.
+- Crops that retained slideshow controls, cut off faces, were dominated by interface elements, or did not meet the image-quality threshold were rejected.
+- A recovered Empowerment image exposing registration and partner material remains excluded.
+- Third-party portrait assets discovered in organization-published material remain excluded.
+- Direct image assets are preferred over screenshot crops when a clean organization-controlled original is available.
+- Source information and publication limits are maintained here and in `docs/content-evidence-matrix.md`; public pages do not reproduce this internal provenance language.

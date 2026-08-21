@@ -16,7 +16,7 @@
 | `src/app` | Route segments, root layout, and global CSS. Public routes are implemented as App Router pages. |
 | `src/components` | Reusable layout, section, card, and UI components. |
 | `src/config` | Site, theme, metadata, and donation-architecture configuration. |
-| `src/data` | Small structured content records, including the verified legacy project archive. |
+| `src/data` | Small structured content records, including organization content and project areas. |
 | `src/lib` | Shared utilities and deferred integration boundaries. |
 | `src/content` | Reserved for a future approved content layer; it is not an active MDX system. |
 | `public/images` | Organization-owned, provenance-documented brand and project media. |
@@ -29,7 +29,7 @@ Project records live in `src/data/projects.js`. The project index and `src/app/p
 
 ## Data and content boundaries
 
-`docs/asset-inventory.md` records the legacy source and allowed use of recovered images. A record may preserve a publicly established project purpose, but it must not imply current delivery, dates, locations, outcomes, metrics, or identities that have not been verified.
+`docs/asset-inventory.md` records archived sources and allowed use of recovered images. A record may preserve a publicly established project purpose, but it must not imply current delivery, dates, locations, outcomes, metrics, or identities that have not been verified.
 
 Impact, Stories, and Donate are deliberately content-ready states: their layouts exist, but facts and payment data remain absent until the organization approves them. A future MDX/content layer may be introduced only after the content-readiness requirements are met; it must not replace the current structured project data without an explicit migration decision.
 
