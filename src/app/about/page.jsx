@@ -98,7 +98,7 @@ export default function AboutPage() {
       </section>
 
       <section className="section section--surface" aria-labelledby="location-heading">
-        <div className="container about-statements">
+        <div className="container about-location">
           <div>
             <p className="eyebrow">Location</p>
             <h2 id="location-heading">Find us in Mushin.</h2>
@@ -106,8 +106,20 @@ export default function AboutPage() {
           <div>
             <p className="body-large">Palm Avenue, Mushin, Lagos, Nigeria.</p>
             <p>
-              This conservative location reference has been approved by the project owner for current publication. A detailed address, hours, and contact channels will be added only when they are verified.
+              This conservative location reference has been approved by the project owner for current publication. Legacy contact details are shared as supplied; detailed office information and hours are not currently published.
             </p>
+            <p className="about-location__contact"><a href="tel:+2349123528792">+234 9123 528 792</a><a href="mailto:giftwob@gmail.com">giftwob@gmail.com</a></p>
+            <div className="about-location__map-wrap">
+              <iframe
+                loading="lazy"
+                referrerPolicy="no-referrer"
+                src="https://www.google.com/maps?q=Palm%20Avenue%2C%20Mushin%2C%20Lagos%2C%20Nigeria&output=embed"
+                title="Map showing Palm Avenue in Mushin, Lagos, Nigeria"
+              />
+            </div>
+            <a className="text-link" href="https://www.google.com/maps/search/?api=1&query=Palm%20Avenue%2C%20Mushin%2C%20Lagos%2C%20Nigeria" rel="noreferrer" target="_blank">
+              Open location in maps <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </section>

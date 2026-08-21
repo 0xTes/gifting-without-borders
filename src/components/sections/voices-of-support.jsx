@@ -1,6 +1,6 @@
 import ButtonLink from "@/components/ui/button-link";
-import ContentReadyPanel from "@/components/ui/content-ready-panel";
 import SectionHeading from "@/components/ui/section-heading";
+import { legacyStories } from "@/data/legacy-records";
 
 export default function VoicesOfSupport() {
   return (
@@ -10,23 +10,28 @@ export default function VoicesOfSupport() {
           <SectionHeading
             eyebrow="Voices of Support"
             id="voices-heading"
-            intro="The people closest to this work deserve to be represented accurately and with their consent."
+            intro="Two voices preserved from the organisation’s legacy public record, republished with project-owner approval."
           >
-            Listening is part of being accountable.
+            Voices from the public record.
           </SectionHeading>
           <ButtonLink href="/stories" variant="text">
-            Visit our stories <span aria-hidden="true">→</span>
+            Read more stories <span aria-hidden="true">→</span>
           </ButtonLink>
         </div>
 
         <div className="voices-layout__panels">
-          <ContentReadyPanel title="Stories shared with care">
-            Donor, volunteer, partner, and community perspectives will be published only when they are complete, approved, and meaningful.
-          </ContentReadyPanel>
+          {legacyStories.map((story) => (
+            <article className="voice-card" key={story.name}>
+              <p className="voice-card__quote-mark" aria-hidden="true">“</p>
+              <p className="voice-card__name">{story.name}</p>
+              <p className="voice-card__role">{story.role}</p>
+              <blockquote>{story.quote}</blockquote>
+            </article>
+          ))}
           <aside className="voices-layout__note">
-            <p className="eyebrow">Our editorial commitment</p>
+            <p className="eyebrow">Publication note</p>
             <p>
-              The legacy homepage’s testimonial content is not reused because consent, factual context, and image permissions could not be verified. Real voices will be presented in their own context.
+              Names, roles, and quotations are reproduced as displayed in the legacy public record. Portraits are intentionally not reused because their provenance is unclear.
             </p>
           </aside>
         </div>

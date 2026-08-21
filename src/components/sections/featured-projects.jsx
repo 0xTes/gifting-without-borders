@@ -24,7 +24,7 @@ export default function FeaturedProjects() {
           {projects.slice(0, 3).map((project) => <ProjectCard key={project.slug} project={project} />)}
         </div>
         <p className="section-note">
-          Project dates, locations, and outcome reports are not presented until they can be verified for current publication.
+          Selected archive updates appear only where an exact legacy record is clear; they remain historical reference, not live progress data.
         </p>
       </div>
     </section>

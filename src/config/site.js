@@ -12,9 +12,9 @@ export const siteConfig = {
   ],
   donateHref: "/donate",
   socialLinks: [
-    { label: "Facebook", href: "https://www.facebook.com/", icon: "facebook" },
-    { label: "Twitter / X", href: "https://x.com/", icon: "twitter" },
-    { label: "Instagram", href: "https://www.instagram.com/", icon: "instagram" },
+    { label: "Facebook", icon: "facebook" },
+    { label: "Twitter / X", icon: "twitter" },
+    { label: "Instagram", icon: "instagram" },
   ],
 };
 

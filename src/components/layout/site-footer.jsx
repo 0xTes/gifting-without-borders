@@ -61,10 +61,12 @@ export default function SiteFooter() {
         </div>
 
         <div>
-          <p className="site-footer__heading">Support</p>
-          <p className="site-footer__support-copy">
-            Giving information is shared only through verified organisation channels.
-          </p>
+          <p className="site-footer__heading">Contact</p>
+          <address className="site-footer__contact">
+            <p>Palm Avenue, Mushin,<br />Lagos, Nigeria</p>
+            <a href="tel:+2349123528792">+234 9123 528 792</a>
+            <a href="mailto:giftwob@gmail.com">giftwob@gmail.com</a>
+          </address>
           <Link className="text-link" href={siteConfig.donateHref}>
             Visit the Donate page <span aria-hidden="true">→</span>
           </Link>
@@ -72,13 +74,13 @@ export default function SiteFooter() {
 
         <div className="site-footer__social">
           <p className="site-footer__heading">Follow us</p>
-          <p className="site-footer__support-copy">Platform links are placeholders until official accounts are confirmed.</p>
-          <ul aria-label="Social platforms awaiting account confirmation" className="site-footer__social-list">
+          <p className="site-footer__support-copy">Official account links are being confirmed.</p>
+          <ul aria-label="Social platforms with account links pending confirmation" className="site-footer__social-list">
             {siteConfig.socialLinks.map((social) => (
               <li key={social.label}>
-                <a aria-label={`${social.label} — account link to be confirmed`} href={social.href} rel="noreferrer" target="_blank">
+                <span aria-label={`${social.label} account link pending confirmation`} className="site-footer__social-icon" role="img">
                   <SocialIcon name={social.icon} />
-                </a>
+                </span>
               </li>
             ))}
           </ul>
@@ -86,7 +88,17 @@ export default function SiteFooter() {
       </div>
 
       <div className="container site-footer__bottom">
-        <p>© {year} Gifting Without Borders. All rights reserved.</p>
+        <div className="site-footer__copyright">
+          <p>© {year} Gifting Without Borders. All rights reserved.</p>
+          <span className="site-footer__credit" aria-label="Site by Teslim Digital">
+            <Image
+              alt="Teslim Digital"
+              height={1007}
+              src="/images/brand/teslim-digital-logo.png"
+              width={2182}
+            />
+          </span>
+        </div>
         <p>Public information is updated as it is verified.</p>
       </div>
     </footer>

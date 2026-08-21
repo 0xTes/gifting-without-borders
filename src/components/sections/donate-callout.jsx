@@ -12,7 +12,7 @@ export default function DonateCallout() {
           </div>
           <div className="donate-callout__content">
             <p>
-              Explore the ways to support Gifting Without Borders. Donation details are shared through the organisation’s verified giving channels.
+              Explore the ways to support Gifting Without Borders. Exact donation details are shared only when they have been safely approved for publication.
             </p>
             <div className="button-group">
               <ButtonLink href={siteConfig.donateHref}>Donate</ButtonLink>

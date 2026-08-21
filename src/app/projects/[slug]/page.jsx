@@ -23,7 +23,7 @@ export default async function ProjectDetailPage({ params }) {
             <p className="eyebrow">Legacy public record</p>
             <h1>{project.title}</h1>
             <p className="body-large">{project.description}</p>
-            <p className="project-detail-hero__source">Historical description from the organisation homepage · current reporting pending verification</p>
+            <p className="project-detail-hero__source">Owner-approved republication of legacy public material · current reporting context remains to be published</p>
           </div>
           {project.image ? (
             <figure className="project-detail-hero__image">
@@ -54,7 +54,7 @@ export default async function ProjectDetailPage({ params }) {
                 <h2 id="project-gallery-heading">Photographs from the legacy project record.</h2>
               </div>
               <p>
-                These photographs were grouped with this area on the organisation-controlled legacy gallery. They preserve public visual context; they do not confirm current activity, dates, places, or outcomes.
+                These photographs were grouped with this area on the organisation-controlled legacy gallery. They preserve public visual context; they are not presented as a current project update.
               </p>
             </div>
             <div className="project-gallery__grid">
@@ -73,16 +73,42 @@ export default async function ProjectDetailPage({ params }) {
         </section>
       ) : null}
 
+      <section className="section section--surface" aria-labelledby="project-updates-heading">
+        <div className="container project-updates">
+          <div>
+            <p className="eyebrow">Project updates</p>
+            <h2 id="project-updates-heading">{project.updates?.length ? "Selected status records from the archive." : "No specific status record is published yet."}</h2>
+          </div>
+          {project.updates?.length ? (
+            <div className="project-updates__list">
+              {project.updates.map((update) => (
+                <article className="project-update" key={`${update.title}-${update.location}`}>
+                  <p className="project-update__status">{update.status}</p>
+                  <h3>{update.title}</h3>
+                  <dl>
+                    <div><dt>Location</dt><dd>{update.location}</dd></div>
+                    <div><dt>Legacy record</dt><dd>{update.record}</dd></div>
+                  </dl>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className="project-updates__empty">The legacy material supports this project area and its photographs, but does not clearly associate a status, date, or location with this record.</p>
+          )}
+          <p className="project-updates__note">Labels and details are reproduced from the approved legacy public record. They are historical reference points, not live progress indicators.</p>
+        </div>
+      </section>
+
       <section className="section" aria-labelledby="project-transparency-heading">
         <div className="container project-transparency">
           <div>
             <p className="eyebrow">Transparency note</p>
-            <h2 id="project-transparency-heading">A clear boundary around what is not yet known.</h2>
+            <h2 id="project-transparency-heading">A clear boundary around what the archive cannot establish.</h2>
           </div>
           <div>
             <p>{project.sourceNote}</p>
             <p>
-              As verified records become available, this page can grow to include dates, location context, delivery updates, and outcomes without changing its structure.
+              The owner-approved archive makes historic context available. Future reporting can add methodology, date context, delivery updates, and outcomes without changing this structure.
             </p>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import ButtonLink from "@/components/ui/button-link";
 import SectionHeading from "@/components/ui/section-heading";
-
-const metricLabels = ["Projects", "People reached", "Communities", "Partners"];
+import { legacyImpactMetrics, legacyImpactQualifier } from "@/data/legacy-records";
 
 export default function ImpactByNumbers() {
   return (
@@ -11,13 +10,13 @@ export default function ImpactByNumbers() {
           <SectionHeading
             eyebrow="Impact by numbers"
             id="impact-heading"
-            intro="Numbers matter when they are verifiable, meaningful, and placed in the right context."
+            intro="A preserved public snapshot of the organisation’s legacy figures, presented with its limitations intact."
           >
-            We will show the evidence, not just the headline.
+            Numbers deserve their context.
           </SectionHeading>
           <div className="impact-layout__aside">
             <p>
-              A legacy homepage displays undated figures, but without a reporting period, source, scope, or methodology they are not republished here. Our first public impact summary is in preparation.
+              These figures were published on the legacy homepage and are now shared with project-owner approval. They are not presented as audited or current totals.
             </p>
             <ButtonLink href="/impact" variant="text-light">
               Explore our impact approach <span aria-hidden="true">→</span>
@@ -26,14 +25,15 @@ export default function ImpactByNumbers() {
         </div>
 
         <dl className="metrics-grid">
-          {metricLabels.map((label) => (
-            <div className="metric" key={label}>
-              <dt>{label}</dt>
-              <dd aria-label="Verified figure forthcoming">—</dd>
-              <p>Verified figure forthcoming</p>
+          {legacyImpactMetrics.map((metric) => (
+            <div className="metric" key={metric.label}>
+              <dt>{metric.label}</dt>
+              <dd>{metric.value}</dd>
+              <p>Legacy public record</p>
             </div>
           ))}
         </dl>
+        <p className="impact-layout__qualifier">{legacyImpactQualifier}</p>
       </div>
     </section>
   );

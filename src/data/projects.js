@@ -8,7 +8,21 @@ export const projects = [
     imageAlt:
       "People stand together indoors holding certificates.",
     sourceNote:
-      "Evidence class B — organisation-published legacy homepage and gallery records. They establish the historical project name, description, and associated visual context; they do not establish a current date, location, activity, outcome, or consent for a personal story.",
+      "Legacy public record with project-owner republication approval. The gallery and selected project updates are historical material; they are not a current activity, outcome, or methodology report.",
+    updates: [
+      {
+        title: "IT Training — Full Stack Development",
+        status: "Completed",
+        location: "Mushin",
+        record: "2025",
+      },
+      {
+        title: "IT Training — Web Development, Data Analysis, Desktop Publishing",
+        status: "Planned",
+        location: "Ikeja",
+        record: "2025",
+      },
+    ],
     gallery: [
       {
         src: "/images/projects/empowerment-training/empowerment-training-02.webp",
@@ -29,7 +43,21 @@ export const projects = [
     imageAlt:
       "People sit outdoors around a table during a community gathering.",
     sourceNote:
-      "Evidence class B — organisation-published legacy homepage and gallery records. They establish the historical project name, description, and associated visual context; they do not establish a current date, location, activity, outcome, or consent for a personal story.",
+      "Legacy public record with project-owner republication approval. The gallery and selected project updates are historical material; they are not a current activity, outcome, or methodology report.",
+    updates: [
+      {
+        title: "2021 Outreach Program",
+        status: "Completed",
+        location: "Mushin",
+        record: "2025",
+      },
+      {
+        title: "Blood Donation",
+        status: "Completed",
+        location: "Fedral Hospital of Lagos",
+        record: "2025",
+      },
+    ],
     gallery: [
       {
         src: "/images/projects/medical-outreach/medical-outreach-01.webp",
@@ -54,7 +82,7 @@ export const projects = [
     imageAlt:
       "People wearing Gifting Without Borders shirts stand beside food and household supplies.",
     sourceNote:
-      "Evidence class B — organisation-published legacy homepage and gallery records. They establish the historical project name, description, and associated visual context; they do not establish a current date, location, activity, outcome, or consent for a personal story.",
+      "Legacy public record with project-owner republication approval. The gallery preserves historical visual context; no specific status, date, location, or outcome record has been published here.",
     gallery: [
       {
         src: "/images/projects/feeding-outreach/feeding-outreach-01.webp",
@@ -79,7 +107,7 @@ export const projects = [
     imageAlt:
       "Two people in Gifting Without Borders shirts stand with an older woman holding bags.",
     sourceNote:
-      "Evidence class B — organisation-published legacy gallery material, with a directly supplied owner copy of the primary Widows Outreach photograph. It establishes project association and visible image context only; it does not establish a current date, location, activity, outcome, or consent for a personal story.",
+      "Legacy public record with project-owner republication approval, including a directly supplied owner copy of the primary photograph. The gallery preserves historical visual context; no specific status, date, location, or outcome record has been published here.",
     gallery: [
       {
         src: "/images/projects/widows-outreach/widows-outreach-01.webp",

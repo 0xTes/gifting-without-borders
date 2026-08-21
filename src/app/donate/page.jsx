@@ -5,7 +5,7 @@ export default function DonatePage() {
     <main id="main-content">
       <PageHero
         eyebrow="Donate"
-        intro="Support should be straightforward, but it should also be safe. This page sets out the giving structure without publishing financial details that have not been verified for current use."
+        intro="Support should be straightforward, but it should also be safe. The project owner has approved reuse of legacy giving information, but no exact account number, account name, wallet identifier, or provider link was available in the supplied source material."
         title="Give with confidence, not assumptions."
       />
 
@@ -14,13 +14,13 @@ export default function DonatePage() {
           <div>
             <p className="eyebrow">Primary giving route</p>
             <h2 id="bank-transfer-heading">Bank transfer</h2>
-            <p className="body-large">Bank transfer is the primary donation pathway in this information architecture.</p>
+            <p className="body-large">Bank transfer remains the primary giving route when exact, current payment details are supplied for publication.</p>
           </div>
           <div className="donate-primary__status">
-            <p className="donate-primary__status-label">Verification status</p>
-            <h3>Payment details pending publication</h3>
+            <p className="donate-primary__status-label">Details being confirmed</p>
+            <h3>No bank details are active yet.</h3>
             <p>
-              The legacy Donate route was unavailable during the source audit, and no current payment instruction was recovered. Bank name, account name, and account number will appear here only after the organisation confirms that they are current and safe to share publicly.
+              The owner has approved legacy donation information for reuse, but no unambiguous bank name, account name, or account number was available to publish safely. These values will appear only when the exact approved record is supplied.
             </p>
           </div>
         </div>
@@ -30,13 +30,13 @@ export default function DonatePage() {
         <div className="container">
           <div className="donate-methods__heading">
             <div><p className="eyebrow">Additional methods</p><h2 id="additional-methods-heading">Local giving options, ready for verification.</h2></div>
-            <p>Each channel has a place in the structure. Links, account identifiers, and QR codes remain intentionally absent until they are verified.</p>
+            <p>Each channel has a place in the structure. Links, account identifiers, and QR codes remain intentionally absent until exact approved values are available.</p>
           </div>
           <div className="donate-methods">
-            <article><h3>Paystack</h3><p>Payment link awaiting verification.</p></article>
-            <article><h3>Flutterwave</h3><p>Payment link awaiting verification.</p></article>
-            <article><h3>OPay</h3><p>Wallet details awaiting verification.</p></article>
-            <article><h3>PalmPay</h3><p>Wallet details awaiting verification.</p></article>
+            <article><h3>Paystack</h3><p>Details being confirmed.</p></article>
+            <article><h3>Flutterwave</h3><p>Details being confirmed.</p></article>
+            <article><h3>OPay</h3><p>Details being confirmed.</p></article>
+            <article><h3>PalmPay</h3><p>Details being confirmed.</p></article>
           </div>
         </div>
       </section>

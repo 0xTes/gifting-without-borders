@@ -1,5 +1,6 @@
 import ButtonLink from "@/components/ui/button-link";
 import PageHero from "@/components/ui/page-hero";
+import { legacyImpactMetrics, legacyImpactQualifier } from "@/data/legacy-records";
 
 export default function ImpactPage() {
   return (
@@ -7,39 +8,45 @@ export default function ImpactPage() {
       <PageHero
         eyebrow="Impact"
         intro="Impact is more than a headline figure. It is the relationship between a real need, the work carried out, what can be evidenced, and what still needs to be learned."
-        title="Impact should be understood with care."
+        title="A public record, read with care."
       />
 
-      <section className="section section--surface" aria-labelledby="measurement-heading">
-        <div className="container impact-page__intro">
+      <section className="section section--teal impact-snapshot" aria-labelledby="legacy-impact-heading">
+        <div className="container">
           <div>
-            <p className="eyebrow">What impact means here</p>
-            <h2 id="measurement-heading">A commitment to context before conclusions.</h2>
+            <p className="eyebrow">Legacy public impact snapshot</p>
+            <h2 id="legacy-impact-heading">Figures preserved from the public record.</h2>
           </div>
-          <p className="body-large">
-            Gifting Without Borders will publish figures only where they can be verified and explained. Until then, this page is a clear statement of the standard that future reporting should meet.
-          </p>
+          <dl className="metrics-grid impact-snapshot__metrics">
+            {legacyImpactMetrics.map((metric) => (
+              <div className="metric" key={metric.label}>
+                <dt>{metric.label}</dt>
+                <dd>{metric.value}</dd>
+                <p>Legacy public record</p>
+              </div>
+            ))}
+          </dl>
+          <p className="impact-snapshot__qualifier">{legacyImpactQualifier}</p>
         </div>
       </section>
 
-      <section className="section" aria-labelledby="principles-heading">
-        <div className="container">
-          <p className="eyebrow">Measurement principles</p>
-          <h2 id="principles-heading">What responsible reporting should show.</h2>
-          <ol className="impact-principles">
-            <li><span>01</span><div><h3>Purpose before figures</h3><p>Why an initiative matters and the need it was intended to address.</p></div></li>
-            <li><span>02</span><div><h3>Context alongside numbers</h3><p>Figures are more useful when their source, scope, and limitations are clear.</p></div></li>
-            <li><span>03</span><div><h3>Learning, not just celebration</h3><p>Progress should leave room for reflection and better future decisions.</p></div></li>
-            <li><span>04</span><div><h3>Publicly shareable evidence</h3><p>Information should be published only when it can be responsibly supported.</p></div></li>
-          </ol>
+      <section className="section section--surface" aria-labelledby="impact-context-heading">
+        <div className="container impact-page__intro">
+          <div>
+            <p className="eyebrow">Reading the record</p>
+            <h2 id="impact-context-heading">What these figures establish—and what they do not.</h2>
+          </div>
+          <p className="body-large">
+            The figures establish that these measures were publicly presented by the organisation’s legacy site and have been approved by the project owner for republication. They do not establish a reporting period, methodology, source documents, or the counting scope behind each figure.
+          </p>
         </div>
       </section>
 
       <section className="section section--teal impact-page__reporting" aria-labelledby="reporting-heading">
         <div className="container impact-page__reporting-grid">
           <div>
-            <p className="eyebrow">Future reporting</p>
-            <h2 id="reporting-heading">What visitors can expect to find over time.</h2>
+            <p className="eyebrow">Reporting context to build next</p>
+            <h2 id="reporting-heading">What future impact reporting should make clear.</h2>
           </div>
           <ul>
             <li>Project purpose and context</li>

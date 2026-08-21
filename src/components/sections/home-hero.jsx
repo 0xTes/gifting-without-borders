@@ -27,9 +27,16 @@ export default function HomeHero() {
             alt="A Gifting Without Borders team member stands beside an older woman outdoors."
             fill
             priority
-            sizes="(min-width: 62rem) 42vw, 100vw"
+            sizes="(min-width: 62rem) 36vw, 100vw"
             src="/images/home/hero.webp"
           />
+          <figcaption className="home-hero__statement">
+            <p className="eyebrow">Our approach</p>
+            <p className="home-hero__statement-copy">
+              Humanitarian support should make people feel seen—not reduced to a statistic.
+            </p>
+            <p className="home-hero__statement-note">Community first · dignity always</p>
+          </figcaption>
         </figure>
       </div>
     </section>
