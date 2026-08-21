@@ -25,6 +25,10 @@ export const projects = [
     ],
     gallery: [
       {
+        src: "/images/projects/empowerment-training.webp",
+        alt: "People stand together indoors holding certificates.",
+      },
+      {
         src: "/images/projects/empowerment-training/empowerment-training-02.webp",
         alt: "A group of people pose indoors with certificates.",
       },
