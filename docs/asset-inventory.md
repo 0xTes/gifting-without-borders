@@ -5,6 +5,7 @@ Source recovery audit: 2026-08-17. Live-source recheck and owner asset intake: 2
 | Local asset | Source | Current use | Provenance boundary |
 | --- | --- | --- | --- |
 | `public/images/brand/gifting-without-borders-logo.png` | Legacy `/Logo.png` | Header and footer identity | Organization logo published on the legacy homepage. |
+| `public/images/brand/teslim-digital-logo.png` | Owner-supplied `logo.png` | Footer implementation credit | Direct owner-supplied Teslim Digital identity asset. It is presented beside the copyright statement without a destination URL. |
 | `public/images/home/hero.webp` | Owner-supplied `hero.jpg` | Homepage right-side hero media | Direct owner-supplied visual and explicit placement direction. The delivered file is WebP despite its supplied `.jpg` filename. It supports the image placement, not an inferred activity, date, location, or outcome. |
 | `public/images/projects/empowerment-training.webp` | Legacy `/IMG4.jpg` | Empowerment & Training project card and detail hero | Legacy homepage image paired with the training project card. The delivered file is WebP despite the legacy `.jpg` URL. |
 | `public/images/projects/empowerment-training/empowerment-training-02.webp` | Legacy `/Empowerment/Emp2.jpg` | Empowerment & Training detail gallery | Original gallery image rendered in the legacy Empowerment group. The delivered file is WebP despite the legacy `.jpg` URL. |
@@ -22,6 +23,7 @@ Source recovery audit: 2026-08-17. Live-source recheck and owner asset intake: 2
 - One recovered Empowerment image was excluded because it visibly exposes registration and partner material that this milestone does not publish or substantiate.
 - Third-party Freepik images found in the legacy page source remain excluded.
 - Direct navigation to legacy `/gallery` returned a not-found response during the recheck, while the client-rendered gallery exposed the original source asset paths used above. The paths are treated as historic visual associations, not as a current publication record.
-- No legacy address, email, telephone, social account handle, payment information, statistics, testimonials, named individuals, dates, locations, or outcomes are reused, except the owner-authorized conservative location string recorded in the evidence matrix.
+- The owner has approved exact republication of the legacy impact figures, selected project status records, testimonial text, conservative location, phone number, and email. These are documented in `docs/content-evidence-matrix.md` as owner-approved legacy records, not independently audited reports.
+- No precise street address, official social account URL, bank information, wallet identifier, payment-provider URL, or QR code is present in the supplied/local source material. These remain inactive and unpublished.
 
 Project descriptions and their publication boundaries are centralized in `src/data/projects.js`. See `docs/content-evidence-matrix.md` for the evidence classification used by the trust-content milestone.
